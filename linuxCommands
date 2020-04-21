@@ -1,8 +1,9 @@
-#Useful Linux Commands
+## Useful Linux Commands
 
 Network connections
 >watch ss -tp
-netstat -ant
+Tcp connections -anu=udp
+>netstat -ant
 netstat -tulpn
 lsof -i
 smb:// ip /share
@@ -28,7 +29,7 @@ tcpkill host ip and port port
 echo "1" /proc/sys/net/ipv4/ip forward
 echo ''nameserver x.x.x.x'' /etc7resolv.conf
 
-Tcp connections -anu=udp
+
 Connections with PIDs
 Established connections
 Access windows smb share
@@ -53,3 +54,29 @@ List DHCP assignments
 Block ip:port
 Turn on IP Forwarding
 Add DNS Server 
+
+## Welcome to SlyOne999 GitHub Pages
+
+This is a set of pages to store my personal documents to help with my Ethical Hacking learning journey.
+
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```

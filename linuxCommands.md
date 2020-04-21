@@ -10,15 +10,21 @@ netstat -ant
 `````
 Show UDP connections -anu=udp
 ````
-netstat -ant
+netstat -anu
 `````
 Connections with PIDs
 ````
 netstat -tulpn
 ````
-
+Established Connections
+````
 lsof -i
+````
+Connect to an SMB Share
+````
 smb:// ip /share
+````
+
 share user x.x.x.x c$
 smbclient -0 user\\\\ ip \\ share
 ifconfig eth# ip I cidr

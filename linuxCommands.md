@@ -1,10 +1,22 @@
 ## Useful Linux Commands
 
-Network connections
->watch ss -tp
-Tcp connections -anu=udp
->netstat -ant
+View Network Connections
+```
+watch ss -tp
+````
+Show TCP connections -anu=udp
+````
+netstat -ant
+`````
+Show UDP connections -anu=udp
+````
+netstat -ant
+`````
+Connections with PIDs
+````
 netstat -tulpn
+````
+
 lsof -i
 smb:// ip /share
 share user x.x.x.x c$
@@ -30,7 +42,7 @@ echo "1" /proc/sys/net/ipv4/ip forward
 echo ''nameserver x.x.x.x'' /etc7resolv.conf
 
 
-Connections with PIDs
+
 Established connections
 Access windows smb share
 Mount Windows share

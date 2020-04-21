@@ -1,0 +1,55 @@
+#Useful Linux Commands
+
+Network connections
+>watch ss -tp
+netstat -ant
+netstat -tulpn
+lsof -i
+smb:// ip /share
+share user x.x.x.x c$
+smbclient -0 user\\\\ ip \\ share
+ifconfig eth# ip I cidr
+ifconfig ethO:l ip I cidr
+route add default gw gw lp
+ifconfig eth# mtu [size]
+export l1AC=xx: XX: XX: XX: XX: XX
+ifconfig int hw ether
+macchanger -m l1AC int
+iwlist int scan
+dig -x ip
+host ip
+host -t SRV service tcp.url.com
+dig @ ip domain -t AXrR
+host -1 domain namesvr
+ip xfrm state list
+ip addr add ip I cidr aev ethO
+/var/log/messages I grep DHCP
+tcpkill host ip and port port
+echo "1" /proc/sys/net/ipv4/ip forward
+echo ''nameserver x.x.x.x'' /etc7resolv.conf
+
+Tcp connections -anu=udp
+Connections with PIDs
+Established connections
+Access windows smb share
+Mount Windows share
+Sl1B connect
+Set IP and netmask
+Set virtual interface
+Set GW
+Change size
+Change
+Change
+Backtrack changer
+Built-in wifi scanner
+Domain lookup for IP
+Domain lookup for IP
+Domain SRV lookup
+DNS Zone Xfer
+DNS Zone Xfer
+Print existing VPN kejs
+Adds 'hidden' interface
+List DHCP assignments
+Block ip:port
+Turn on IP Forwarding
+Add DNS Server 

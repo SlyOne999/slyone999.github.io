@@ -24,77 +24,87 @@ Connect to an SMB Share
 ````
 smb:// ip /share
 ````
-
-share user x.x.x.x c$
-smbclient -0 user\\\\ ip \\ share
-ifconfig eth# ip I cidr
-ifconfig ethO:l ip I cidr
-route add default gw gw lp
-ifconfig eth# mtu [size]
-export l1AC=xx: XX: XX: XX: XX: XX
-ifconfig int hw ether
-macchanger -m l1AC int
-iwlist int scan
-dig -x ip
-host ip
-host -t SRV service tcp.url.com
-dig @ ip domain -t AXrR
-host -1 domain namesvr
-ip xfrm state list
-ip addr add ip I cidr aev ethO
-/var/log/messages I grep DHCP
-tcpkill host ip and port port
-echo "1" /proc/sys/net/ipv4/ip forward
-echo ''nameserver x.x.x.x'' /etc7resolv.conf
-
-
-
-Established connections
-Access windows smb share
 Mount Windows share
-Sl1B connect
-Set IP and netmask
+````
+share user x.x.x.x c$
+````
+SMB connect
+````
+smbclient -0 user\\\\ ip \\ share
+````
+Set IP and NetMask
+````
+ifconfig eth# ip I cidr
+````
 Set virtual interface
-Set GW
-Change size
-Change
-Change
-Backtrack changer
-Built-in wifi scanner
-Domain lookup for IP
-Domain lookup for IP
+````
+ifconfig ethO:l ip I cidr
+````
+Set Gateway
+````
+route add default gw gw lp
+````
+Change the MTU size
+````
+ifconfig eth# mtu [size]
+````
+Change MAC
+````
+export l1AC=xx: XX: XX: XX: XX: XX
+````
+Change MAC
+````
+ifconfig int hw ether
+````
+BackTrack MAC Changer
+````
+macchanger -m l1AC int
+````
+Built-in Wifi Scanner
+````
+iwlist int scan
+````
+Domain Lookup for IP
+````
+dig -x ip
+````
+Domain Lookup fo IP
+````
+host ip
+````
 Domain SRV lookup
-DNS Zone Xfer
-DNS Zone Xfer
-Print existing VPN kejs
+````
+host -t SRV service tcp.url.com
+````
+DNS Zone transfer
+````
+dig @ ip domain -t AXrR
+````
+DNS Zone transfer
+````
+host -1 domain namesvr
+````
+Print VPN Keys 
+````
+ip xfrm state list
+````
 Adds 'hidden' interface
+````
+ip addr add ip I cidr aev ethO
+````
 List DHCP assignments
-Block ip:port
-Turn on IP Forwarding
-Add DNS Server 
-
-## Welcome to SlyOne999 GitHub Pages
-
-This is a set of pages to store my personal documents to help with my Ethical Hacking learning journey.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
+````
+/var/log/messages I grep DHCP
+````
+Block an IP:Port
+````
+tcpkill host ip and port port
+````
+Turn on Ip Forwarding
+````
+echo "1" /proc/sys/net/ipv4/ip forward
+````
+Add DNS Server
+````
+echo ''nameserver x.x.x.x'' /etc7resolv.conf
+````

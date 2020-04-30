@@ -7,8 +7,8 @@
   url: /
   sublinks:
     - title: Sub-item 1
-      url: /linuxCommands
+      url: /linux/linuxCommands
     - title: Useful
-      url: /usefulLinks
-    - title: Sub-item 3
-      url: /group/si3
+      url: /usefulInfo/usefulLinks
+    - title: Network Ports
+      url: /usefulInfo/networkPorts 

@@ -1,4 +1,4 @@
-[**slyone999’s Security Blog**](https://slyone999.github.io)
+[**slyone999’s Security Blog**] (https://slyone999.github.io)
 
 [//]: # (# -- 5 spaces before)
 [//]: # (## -- 4 spaces before)
@@ -9,18 +9,9 @@
 * TOC
 {:toc}
 
-
-
-
-
 # Pentest
 
-
-
-
 ## Reverse Shells
-
-
 
 ### Bash
 

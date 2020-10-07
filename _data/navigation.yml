@@ -11,4 +11,6 @@
     - title: Useful
       url: /usefulInfo/usefulLinks
     - title: Network Ports
-      url: /usefulInfo/networkPorts 
+      url: /usefulInfo/networkPorts
+    - title: Cheatsheets
+      url: /cheatsheets/readme.md

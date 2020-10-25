@@ -15,8 +15,8 @@
     - title: Cheatsheets
       url: /cheatsheets
 - title: Machine Write-Ups
-  url: /HTB
+  url: /htb
   sublinks:
     - title: Jerry - Windows
-      url: /HTB/jerry
+      url: /htb/jerry
 

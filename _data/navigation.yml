@@ -14,3 +14,9 @@
       url: /usefulInfo/networkPorts
     - title: Cheatsheets
       url: /cheatsheets
+- title: Machine Write-Ups
+  url: /HTB
+  sublinks:
+    - title: Jerry - Windows
+      url: /HTB/jerry
+

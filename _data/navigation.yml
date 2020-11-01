@@ -14,6 +14,11 @@
       url: /usefulInfo/networkPorts
     - title: Cheatsheets
       url: /cheatsheets
+- title: Challenge Write-Ups
+  url: /htb
+  sublinks:
+    - title: 0xDiablos
+      url: /htb/diablos
 - title: Machine Write-Ups
   url: /htb
   sublinks:

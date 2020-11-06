@@ -10,9 +10,9 @@
 {:toc}
 
 # Info#
-|Machine Name |NetMon
-|IP Address |10.10.10.152
-|OS |Windows
+|Machine Name |NetMon |
+|IP Address |10.10.10.152 |
+|OS |Windows |
 
 || Test || Test | Test |
 | | | |
@@ -22,7 +22,6 @@
 
 ## NMap
 
-```
 nmap -Pn -p 1-65535 -T4 -A -v 10.10.10.152
 
 ```

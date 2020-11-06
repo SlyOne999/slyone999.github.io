@@ -10,9 +10,9 @@
 {:toc}
 
 # Info#
-|Machine Name |NetMon |
-|IP Address |10.10.10.152 |
-|OS |Windows |
+| Machine Name | NetMon |
+| IP Address | 10.10.10.152 |
+| OS | Windows |
 
 || Test || Test | Test |
 | | | |

@@ -10,13 +10,10 @@
 {:toc}
 
 # Info#
+
 | Machine Name | NetMon |
 | IP Address | 10.10.10.152 |
 | OS | Windows |
-
-|| Test || Test | Test |
-| | | |
-| a | a | a |
 
 # Recon
 
@@ -126,3 +123,41 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 402.41 seconds
 ```
+
+## Open Services
+
+| Port | Service |
+| 21 | FTP |
+| 135 | MSRPC |
+| 139 | Netbios |
+| 445 | Microsoft Directory Services |
+| 5985 | Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP) |
+| 47001 | Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP) |
+| 49664 | Microsoft Windows RPC |
+| 49665 | Microsoft Windows RPC |
+| 49666 | Microsoft Windows RPC |
+| 49667 | Microsoft Windows RPC |
+| 49668 | Microsoft Windows RPC |
+| 49669 | Microsoft Windows RPC |
+
+
+In the scan it shows that a folder path available to anon user
+The folder structure shows - 
+
+```
+| 02-02-19  11:18PM                 1024 .rnd
+| 02-25-19  09:15PM       <DIR>          inetpub
+| 07-16-16  08:18AM       <DIR>          PerfLogs
+| 02-25-19  09:56PM       <DIR>          Program Files
+| 02-02-19  11:28PM       <DIR>          Program Files (x86)
+| 02-03-19  07:08AM       <DIR>          Users
+|_02-25-19  10:49PM       <DIR>          Windows
+```
+
+FTP into the box you can get a user file from /users/Public/user.txt
+
+This file containes dd58ce67b49e15105e88096c8d9255a5
+
+# User Owned
+
+

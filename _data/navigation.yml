@@ -28,3 +28,6 @@
       url: /htb/jerry
     - title: Netmon - Windows
       url: /htb/netmon
+    - title: Blue - Windows
+      url: /htb/blue
+      

@@ -16,6 +16,18 @@
       url: /cheatsheets
     - title: Mark Down Examples
       url: /examples/markdown
+- title: Ports and Services
+  url: /usefulInfo/enum
+    - title: DNS
+      url: /enum/dns
+    - title: RPC
+      url: /enum/rpc
+    - title: Network Ports
+      url: /usefulInfo/networkPorts
+    - title: Cheatsheets
+      url: /cheatsheets
+    - title: Mark Down Examples
+      url: /examples/markdown
 - title: Challenge Write-Ups
   url: /htb
   sublinks:
@@ -30,4 +42,4 @@
       url: /htb/netmon
     - title: Blue - Windows
       url: /htb/blue
-      
+

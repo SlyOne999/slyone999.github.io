@@ -106,3 +106,178 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 86.22 seconds
 ```
+| PORT      | SERVICE |
+| 135/tcp   | Microsoft Windows RPC |
+| 139/tcp   | Microsoft Windows netbios-ssn |
+| 445/tcp   | Windows 7 Professional 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP) |
+| 49152/tcp | Microsoft Windows RPC |
+| 49153/tcp | Microsoft Windows RPC |
+| 49154/tcp | Microsoft Windows RPC |
+| 49155/tcp | Microsoft Windows RPC |
+| 49156/tcp | Microsoft Windows RPC |
+| 49157/tcp | Microsoft Windows RPC |
+
+SMBMap
+
+SMB is open so try an SMBMap
+
+```
+kali@kali:~/Documents/HTB/blue$ smbmap -H 10.10.10.40 -u anonymous -R
+[+] Guest session       IP: 10.10.10.40:445     Name: 10.10.10.40                                       
+        Disk                                                    Permissions     Comment
+        ----                                                    -----------     -------
+        ADMIN$                                                  NO ACCESS       Remote Admin
+        C$                                                      NO ACCESS       Default share
+        IPC$                                                    NO ACCESS       Remote IPC
+        Share                                                   READ ONLY
+        .\Share\*
+        dr--r--r--                0 Fri Jul 21 02:44:22 2017    .
+        dr--r--r--                0 Fri Jul 21 02:44:22 2017    ..
+        Users                                                   READ ONLY
+        .\Users\*
+        dw--w--w--                0 Fri Jul 21 02:56:23 2017    .
+        dw--w--w--                0 Fri Jul 21 02:56:23 2017    ..
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    Default
+        fr--r--r--              174 Fri Jul 14 18:32:23 2017    desktop.ini
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    Public
+        .\Users\Default\*
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    .
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    ..
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    AppData
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    Desktop
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    Documents
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    Downloads
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    Favorites
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    Links
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    Music
+        fr--r--r--           262144 Sun Jul 16 16:22:24 2017    NTUSER.DAT
+        fr--r--r--             1024 Fri Jul 14 18:32:24 2017    NTUSER.DAT.LOG
+        fr--r--r--           189440 Sun Jul 16 16:22:24 2017    NTUSER.DAT.LOG1
+        fr--r--r--                0 Fri Jul 14 18:37:45 2017    NTUSER.DAT.LOG2
+        fr--r--r--            65536 Fri Jul 14 18:32:24 2017    NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+        fr--r--r--           524288 Fri Jul 14 18:32:24 2017    NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms
+        fr--r--r--           524288 Fri Jul 14 18:32:23 2017    NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    Pictures
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Saved Games
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    Videos
+        .\Users\Default\AppData\*
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    .
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    ..
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Local
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Roaming
+        .\Users\Default\AppData\Local\*
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    .
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    ..
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Microsoft
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Temp
+        .\Users\Default\AppData\Local\Microsoft\*
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    .
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    ..
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Windows
+        .\Users\Default\AppData\Local\Microsoft\Windows\*
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    .
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    ..
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    GameExplorer
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    History
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Temporary Internet Files
+        .\Users\Default\AppData\Roaming\*
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    .
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    ..
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Media Center Programs
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Microsoft
+        .\Users\Default\AppData\Roaming\Microsoft\*
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    .
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    ..
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Internet Explorer
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Windows
+        .\Users\Default\AppData\Roaming\Microsoft\Internet Explorer\*
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    .
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    ..
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    Quick Launch
+        .\Users\Default\AppData\Roaming\Microsoft\Windows\*
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    .
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    ..
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Cookies
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Network Shortcuts
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Printer Shortcuts
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    Recent
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    SendTo
+        dw--w--w--                0 Fri Jul 14 18:37:45 2017    Start Menu
+        dr--r--r--                0 Fri Jul 14 18:37:45 2017    Templates
+        .\Users\Public\*
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    .
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    ..
+        fr--r--r--              174 Fri Jul 21 02:40:38 2017    desktop.ini
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    Documents
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    Downloads
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    Favorites
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    Libraries
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    Music
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    Pictures
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    Recorded TV
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    Videos
+        .\Users\Public\Documents\*
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    .
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    ..
+        fr--r--r--              278 Fri Jul 21 02:40:38 2017    desktop.ini
+        .\Users\Public\Downloads\*
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    .
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    ..
+        fr--r--r--              174 Fri Jul 21 02:40:38 2017    desktop.ini
+        .\Users\Public\Libraries\*
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    .
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    ..
+        fr--r--r--               88 Fri Jul 21 02:40:38 2017    desktop.ini
+        fr--r--r--              876 Fri Jul 21 02:40:38 2017    RecordedTV.library-ms
+        .\Users\Public\Music\*
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    .
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    ..
+        fr--r--r--              380 Fri Jul 21 02:40:38 2017    desktop.ini
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    Sample Music
+        .\Users\Public\Music\Sample Music\*
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    .
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    ..
+        fr--r--r--              586 Fri Jul 21 02:40:38 2017    desktop.ini
+        fr--r--r--          8414449 Fri Jul 21 02:40:38 2017    Kalimba.mp3
+        fr--r--r--          4113874 Fri Jul 21 02:40:38 2017    Maid with the Flaxen Hair.mp3
+        fr--r--r--          4842585 Fri Jul 21 02:40:38 2017    Sleep Away.mp3
+        .\Users\Public\Pictures\*
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    .
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    ..
+        fr--r--r--              380 Fri Jul 21 02:40:38 2017    desktop.ini
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    Sample Pictures
+        .\Users\Public\Pictures\Sample Pictures\*
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    .
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    ..
+        fr--r--r--           879394 Fri Jul 21 02:40:38 2017    Chrysanthemum.jpg
+        fr--r--r--           845941 Fri Jul 21 02:40:38 2017    Desert.jpg
+        fr--r--r--             1120 Fri Jul 21 02:40:38 2017    desktop.ini
+        fr--r--r--           595284 Fri Jul 21 02:40:38 2017    Hydrangeas.jpg
+        fr--r--r--           775702 Fri Jul 21 02:40:38 2017    Jellyfish.jpg
+        fr--r--r--           780831 Fri Jul 21 02:40:38 2017    Koala.jpg
+        fr--r--r--           561276 Fri Jul 21 02:40:38 2017    Lighthouse.jpg
+        fr--r--r--           777835 Fri Jul 21 02:40:38 2017    Penguins.jpg
+        fr--r--r--           620888 Fri Jul 21 02:40:38 2017    Tulips.jpg
+        .\Users\Public\Recorded TV\*
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    .
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    ..
+        fr--r--r--               80 Fri Jul 21 02:40:38 2017    desktop.ini
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    Sample Media
+        .\Users\Public\Recorded TV\Sample Media\*
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    .
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    ..
+        fr--r--r--              171 Fri Jul 21 02:40:38 2017    desktop.ini
+        fr--r--r--          9699328 Fri Jul 21 02:40:38 2017    win7_scenic-demoshort_raw.wtv
+        .\Users\Public\Videos\*
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    .
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    ..
+        fr--r--r--              380 Fri Jul 21 02:40:38 2017    desktop.ini
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    Sample Videos
+        .\Users\Public\Videos\Sample Videos\*
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    .
+        dw--w--w--                0 Fri Jul 21 02:40:38 2017    ..
+        fr--r--r--              326 Fri Jul 21 02:40:38 2017    desktop.ini
+        fr--r--r--         26246026 Fri Jul 21 02:40:38 2017    Wildlife.wmv
+```
+Doesn't appear to be anything here. 
+

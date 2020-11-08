@@ -19,9 +19,9 @@
 - title: Ports and Services
   url: /usefulInfo/enum
     - title: DNS
-      url: /enum/dns
+      url: /usefulInfo/enum/dns
     - title: RPC
-      url: /enum/rpc
+      url: /usefulInfo/enum/rpc
     - title: Network Ports
       url: /usefulInfo/networkPorts
     - title: Cheatsheets

@@ -34,7 +34,7 @@
   sublinks:
     - title: 0xDiablos
       url: /htb/diablos
-- title: Machine Write-Ups
+- title: Windows Machine Write-Ups
   url: /htb
   sublinks:
     - title: Jerry - Windows
@@ -43,4 +43,10 @@
       url: /htb/netmon
     - title: Blue - Windows
       url: /htb/blue
+- title: Linux Machine Write-Ups
+  url: /htb
+  sublinks:
+    - title: Academy - Linux
+      url: /htb/academy
+
 

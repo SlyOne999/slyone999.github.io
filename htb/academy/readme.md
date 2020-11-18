@@ -113,6 +113,7 @@ Completed NSE at 13:46, 0.00s elapsed
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 45.64 seconds
+
 ```
 
 22/tcp    open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
@@ -139,7 +140,6 @@ The website http://academy.htb has a register page, create an account and login 
 Noticed an admin page login exists at http://academt.htb/admin.php the user I created didn't allow access. Can I make the user into an admin? Couldn't find a way to request better access. What gives the user a role when they register. I inspect the register.php page and find the code below.
 
 ```
-
 <html>
 <head>
 <meta charset="utf-8">
@@ -288,7 +288,7 @@ html, body {
 </body>
 </html>
 ```
-The interestign line is this                 
+The interesting line is this                 
 <input type="hidden" value="0" name="roleid" />
 
 I then cretaed an ID with roleid as 1. This user can access the admin panel. That displays this -
@@ -415,7 +415,7 @@ MIX_PUSHER_APP_CLUSTER 	"mt1"
 
 Couldn't login with the dbname, but what is the app key for? Laravel 
 
-SearchSplout brings back 
+SearchSploit brings back 
 
 ```
 ------------------------------------------------------------- ---------------------------------

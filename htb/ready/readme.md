@@ -9,7 +9,7 @@
 * TOC
 {:toc}
 
-# Info#
+# Info
 
 | Machine Name | Ready |
 | IP Address | 10.10.10.220 |

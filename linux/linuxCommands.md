@@ -12,23 +12,23 @@ ls
 ````
 ### 3.	Changes the current directory to the specified one.
 ````
-cd [directory]
+cd [directory] 
 ````
 ### 4.	Creates a new directory.
 ````
-mkdir [directory]
+mkdir [directory] 
 ````
 ### 5.	Removes an empty directory.
 ````
-rmdir [directory]
+rmdir [directory] 
 ````
 ### 6.	Deletes a file.
 ````
-rm [file]
+rm [file] 
 ````
 ### 7.	Deletes a directory and its contents.
 ````
-rm -r [directory]
+rm -r [directory] 
 ````
 ### 8.	Copies a file or directory.
 ````

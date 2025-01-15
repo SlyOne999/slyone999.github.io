@@ -14,126 +14,336 @@ ls
 ````
 cd [directory]
 ````
-4.	mkdir [directory] – Creates a new directory.
-5.	rmdir [directory] – Removes an empty directory.
-6.	rm [file] – Deletes a file.
-7.	rm -r [directory] – Deletes a directory and its contents.
-8.	cp [source] [destination] – Copies a file or directory.
-9.	mv [source] [destination] – Moves or renames a file/directory.
-10.	touch [file] – Creates an empty file or updates the timestamp.
+#### 4.	Creates a new directory.
 ````
-File Viewing Commands
+mkdir [directory]
 ````
-11.	cat [file] – Displays the content of a file.
-12.	less [file] – Views a file page by page.
-13.	more [file] – Similar to less, but with fewer features.
-14.	head -n [number] [file] – Shows the first N lines of a file.
-15.	tail -n [number] [file] – Shows the last N lines of a file.
-16.	tail -f [file] – Continuously displays the last lines of a log file.
+#### 5.	Removes an empty directory.
 ````
-Permissions and Ownership
+rmdir [directory]
 ````
-17.	chmod [permissions] [file] – Changes file permissions.
-18.	chown [user]:[group] [file] – Changes file ownership.
+#### 6.	Deletes a file.
 ````
-Process Management
+rm [file]
 ````
-19.	ps aux – Displays all running processes.
-20.	top – Shows real-time system resource usage.
-21.	htop – Enhanced version of top (requires installation).
-22.	kill [PID] – Terminates a process by its Process ID.
-23.	killall [process_name] – Terminates all processes with the given name.
-24.	pkill [pattern] – Kills processes by matching a name pattern.
+#### 7.	Deletes a directory and its contents.
 ````
-Networking Commands
+rm -r [directory]
 ````
-25.	ping [hostname/IP] – Checks network connectivity.
-26.	ifconfig – Displays network interfaces (deprecated, use ip a).
-27.	ip a – Shows network addresses and interfaces.
-28.	netstat -tulnp – Lists open ports and connections.
-29.	ss -tulnp – Alternative to netstat.
-30.	curl [URL] – Fetches a webpage or data from a URL.
-31.	wget [URL] – Downloads files from the internet.
+#### 8.	Copies a file or directory.
 ````
-Disk and Storage Management
+cp [source] [destination] 
+`````
+#### 9.	Moves or renames a file/directory.
 ````
-32.	df -h – Displays disk usage in a human-readable format.
-33.	du -sh [directory] – Shows the size of a directory.
-34.	mount [device] [directory] – Mounts a filesystem.
-35.	umount [device] – Unmounts a filesystem.
-36.	lsblk – Lists information about available storage devices.
+mv [source] [destination]
 ````
-User Management
+#### 10. Creates an empty file or updates the timestamp.
 ````
-37.	whoami – Displays the current logged-in user.
-38.	who – Shows currently logged-in users.
-39.	id – Displays the user ID (UID) and group ID (GID).
-40.	sudo [command] – Runs a command as a superuser.
-41.	su [user] – Switches to another user account.
-42.	passwd – Changes the user password.
-43.	adduser [username] – Adds a new user.
-44.	deluser [username] – Deletes a user.
+touch [file]
 ````
-Searching and Finding Files
+### File Viewing Commands
+#### 11. Displays the content of a file.
 ````
-45.	find [directory] -name "[filename]" – Searches for a file by name.
-46.	locate [filename] – Quickly finds a file (needs updatedb to be run first).
-47.	grep "[pattern]" [file] – Searches for a pattern in a file.
-48.	grep -r "[pattern]" [directory] – Searches recursively in a directory.
+cat [file] 
 ````
-Compression and Archiving
+####
+12.	Views a file page by page.
 ````
-49.	tar -cvf archive.tar [files] – Creates a tar archive.
-50.	tar -xvf archive.tar – Extracts a tar archive.
-51.	tar -czvf archive.tar.gz [files] – Creates a compressed tar archive.
-52.	tar -xzvf archive.tar.gz – Extracts a compressed tar archive.
-53.	zip archive.zip [files] – Creates a zip archive.
-54.	unzip archive.zip – Extracts a zip archive.
+less [file] 
 ````
-Package Management
-Debian-based (Ubuntu, Debian)
+13.	Similar to less, but with fewer features.
 ````
-55.	apt update – Updates package lists.
-56.	apt upgrade – Installs updates for all packages.
-57.	apt install [package] – Installs a package.
-58.	apt remove [package] – Removes a package.
-59.	dpkg -i [package.deb] – Installs a .deb package.
+more [file] 
 ````
-Red Hat-based (Fedora, CentOS)
+14.	Shows the first N lines of a file.
 ````
-60.	dnf update – Updates all packages.
-61.	dnf install [package] – Installs a package.
-62.	dnf remove [package] – Removes a package.
-63.	rpm -i [package.rpm] – Installs an .rpm package.
+head -n [number] [file] 
 ````
-Text Processing
+15.	 Shows the last N lines of a file.
 ````
-64.	echo "Hello" – Prints text to the terminal.
-65.	cat file | sort – Sorts the contents of a file.
-66.	cat file | uniq – Removes duplicate lines.
-67.	awk '{print $1}' file – Extracts the first column from a file.
-68.	sed 's/old/new/g' file – Replaces text in a file.
+tail -n [number] [file]
 ````
-System Monitoring
+16.	Continuously displays the last lines of a log file.
 ````
-69.	uptime – Shows how long the system has been running.
-70.	free -h – Displays memory usage.
-71.	vmstat – Shows system performance statistics.
-72.	iostat – Displays CPU and disk usage statistics.
+tail -f [file]
 ````
-Logs and Debugging
+### Permissions and Ownership
+#### 17. Changes file permissions.
 ````
-73.	dmesg – Displays system boot messages.
-74.	journalctl -xe – Views system logs.
-75.	tail -f /var/log/syslog – Monitors system logs in real-time.
+chmod [permissions] [file]
 ````
-Shell & Scripting
+#### 18.	Changes file ownership.
 ````
-76.	alias ll='ls -la' – Creates a shortcut for a command.
-77.	unalias ll – Removes an alias.
-78.	history – Shows previously executed commands.
-79.	!! – Repeats the last command.
-80.	!n – Repeats the nth command from history.
+chown [user]:[group] [file] 
+````
+
+### Process Management
+#### 19. Displays all running processes.
+````
+ps aux 
+````
+20.	Shows real-time system resource usage.
+````
+top
+````
+21. Enhanced version of top (requires installation).
+````
+htop
+````
+22.	Terminates a process by its Process ID.
+````
+kill [PID]
+````
+23.	Terminates all processes with the given name.
+````
+kilal [processname]
+````
+24. Kills processes by matching a name pattern.
+````
+pkill [pattern]
+````
+#### Networking Commands
+25.	Checks network connectivity.
+````
+ping [hostname/IP]
+````
+26.	Displays network interfaces (deprecated, use ip a).
+````
+ifconfig
+````
+27.	Shows network addresses and interfaces.
+````
+ip a
+````
+28.	Lists open ports and connections.
+````
+netstat -tulnp
+````
+29.	Alternative to netstat.
+````
+ss -tulnp
+````
+30.	Fetches a webpage or data from a URL.
+````
+curl [URL]
+````
+31.	Downloads files from the internet.
+````
+wget [URL]
+````
+
+#### Disk and Storage Management
+32.	Displays disk usage in a human-readable format.
+````
+df -h
+````
+33.	Shows the size of a directory.
+````
+du -sh
+````
+34.	Mounts a filesystem.
+````
+mount [device] [directory]
+````
+35.	Unmounts a filesystem.
+````
+unmount [device]
+````
+36.	Lists information about available storage devices.
+````
+lsblk
+````
+
+#### User Management
+37.	Displays the current logged-in user.
+````
+whoami
+````
+38.	Shows currently logged-in users.
+````
+who
+````
+39.	Displays the user ID (UID) and group ID (GID).
+````
+id
+````
+40.	Runs a command as a superuser.
+````
+sudo [command]
+````
+41.	Switches to another user account.
+````
+su [user]
+````
+42.	Changes the user password.
+````
+passwd
+````
+43.	Adds a new user.
+````
+adduser [username]
+````
+44.	Deletes a user.
+````
+deluser [username]
+````
+
+#### Searching and Finding Files
+
+45.	Searches for a file by name.
+````
+find [directory] -name "[filename]"
+````
+46.	Quickly finds a file (needs updatedb to be run first).
+````
+locate [filename]
+````
+47.	Searches for a pattern in a file.
+````
+grep "[pattern]" [file]
+````
+48.	Searches recursively in a directory.
+````
+grep -r "[pattern]" [directory]
+````
+#### Compression and Archiving
+49.	Creates a tar archive.
+````
+tar -cvf archive.tar [files]
+````
+50.	Extracts a tar archive.
+````
+tar -xvf archive.tar
+````
+51.	Creates a compressed tar archive.
+````
+tar -czvf archive.tar.gz [files]
+````
+52.	Extracts a compressed tar archive.
+````
+tar -xzvf archive.tar.gz
+````
+53.	Creates a zip archive.
+````
+zip archive.zip [files]
+````
+54.	Extracts a zip archive.
+````
+unzip archive.zip
+````
+#### Package Management
+##### Debian-based (Ubuntu, Debian)
+55.	Updates package lists.
+````
+apt update
+````
+56.	Installs updates for all packages.
+````
+apt upgrade
+````
+57.	Installs a package.
+````
+apt install [package]
+````
+58.	Removes a package.
+````
+apt remove [package]
+````
+59.	Installs a .deb package.
+````
+dpkg -i [package.deb]
+````
+##### Red Hat-based (Fedora, CentOS)
+60.	Updates all packages.
+````
+dnf update
+````
+61.	Installs a package.
+````
+dnf install [package]
+````
+62.	Removes a package.
+````
+dnf remove [package]
+````
+63.	Installs an .rpm package.
+````
+rpm -i [package.rpm]
+````
+#### Text Processing
+64.	Prints text to the terminal.
+````
+echo "Hello"
+````
+65.	Sorts the contents of a file.
+````
+cat file | sort
+````
+66.	Removes duplicate lines.
+````
+cat file | uniq
+````
+67.	Extracts the first column from a file.
+````
+awk '[print $1}'
+````
+68.	Replaces text in a file.
+````
+sed 's/old/new/g' file
+````
+
+#### System Monitoring
+70.	Shows how long the system has been running.
+````
+uptime
+````
+70.	Displays memory usage.
+````
+free -h
+````
+71.	Shows system performance statistics.
+````
+vmstat
+````
+72.	Displays CPU and disk usage statistics.
+````
+iostat
+````
+#### Logs and Debugging
+73.	Displays system boot messages.
+````
+dmesg
+````
+74.	Views system logs.
+````
+journalctl -xe
+````
+75. Monitors system logs in real-time.
+````
+tail -f /var/log/syslog 
+````
+#### Shell & Scripting
+76.	Creates a shortcut for a command.
+````
+alias ll='ls -la'
+````
+77. Removes an alias.
+````
+unalias 1l
+````
+78. Shows previously executed commands.
+````
+history
+````
+79. Repeats the last command.
+````
+!!
+````
+80. Repeats the nth command from history.
+````
+!n
+````
 
 View Network Connections
 ```

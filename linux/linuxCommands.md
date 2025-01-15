@@ -36,311 +36,309 @@ cp [source] [destination]
 `````
 ### 9.	Moves or renames a file/directory.
 ````
-mv [source] [destination]
+mv [source] [destination] 
 ````
 ### 10. Creates an empty file or updates the timestamp.
 ````
-touch [file]
+touch [file] 
 ````
-### File Viewing Commands
+## File Viewing Commands
 ### 11. Displays the content of a file.
 ````
 cat [file] 
 ````
-###
-12.	Views a file page by page.
+### 12.	Views a file page by page.
 ````
 less [file] 
 ````
-13.	Similar to less, but with fewer features.
+### 13.	Similar to less, but with fewer features.
 ````
 more [file] 
 ````
-14.	Shows the first N lines of a file.
+### 14.	Shows the first N lines of a file.
 ````
 head -n [number] [file] 
 ````
-15.	 Shows the last N lines of a file.
+### 15.	 Shows the last N lines of a file.
 ````
-tail -n [number] [file]
+tail -n [number] [file] 
 ````
-16.	Continuously displays the last lines of a log file.
+### 16.	Continuously displays the last lines of a log file.
 ````
-tail -f [file]
+tail -f [file] 
 ````
-### Permissions and Ownership
+## Permissions and Ownership
 ### 17. Changes file permissions.
 ````
-chmod [permissions] [file]
+chmod [permissions] [file] 
 ````
 ### 18.	Changes file ownership.
 ````
 chown [user]:[group] [file] 
 ````
 
-### Process Management
+## Process Management
 ### 19. Displays all running processes.
 ````
 ps aux 
 ````
-20.	Shows real-time system resource usage.
+### 20.	Shows real-time system resource usage.
 ````
 top
 ````
-21. Enhanced version of top (requires installation).
+### 21. Enhanced version of top (requires installation).
 ````
 htop
 ````
-22.	Terminates a process by its Process ID.
+### 22.	Terminates a process by its Process ID.
 ````
-kill [PID]
+kill [PID] 
 ````
-23.	Terminates all processes with the given name.
+### 23.	Terminates all processes with the given name.
 ````
-kilal [processname]
+kilal [processname] 
 ````
-24. Kills processes by matching a name pattern.
+### 24. Kills processes by matching a name pattern.
 ````
-pkill [pattern]
+pkill [pattern] 
 ````
-### Networking Commands
-25.	Checks network connectivity.
+## Networking Commands
+### 25.	Checks network connectivity.
 ````
-ping [hostname/IP]
+ping [hostname/IP] 
 ````
-26.	Displays network interfaces (deprecated, use ip a).
+### 26.	Displays network interfaces (deprecated, use ip a).
 ````
 ifconfig
 ````
-27.	Shows network addresses and interfaces.
+### 27.	Shows network addresses and interfaces.
 ````
 ip a
 ````
-28.	Lists open ports and connections.
+### 28.	Lists open ports and connections.
 ````
 netstat -tulnp
 ````
-29.	Alternative to netstat.
+### 29.	Alternative to netstat.
 ````
 ss -tulnp
 ````
-30.	Fetches a webpage or data from a URL.
+### 30.	Fetches a webpage or data from a URL.
 ````
-curl [URL]
+curl [URL] 
 ````
-31.	Downloads files from the internet.
+### 31.	Downloads files from the internet.
 ````
-wget [URL]
+wget [URL] 
 ````
 
-### Disk and Storage Management
-32.	Displays disk usage in a human-readable format.
+## Disk and Storage Management
+### 32.	Displays disk usage in a human-readable format.
 ````
 df -h
 ````
-33.	Shows the size of a directory.
+### 33.	Shows the size of a directory.
 ````
 du -sh
 ````
-34.	Mounts a filesystem.
+### 34.	Mounts a filesystem.
 ````
-mount [device] [directory]
+mount [device] [directory] 
 ````
-35.	Unmounts a filesystem.
+### 35.	Unmounts a filesystem.
 ````
-unmount [device]
+unmount [device] 
 ````
-36.	Lists information about available storage devices.
+### 36.	Lists information about available storage devices.
 ````
 lsblk
 ````
 
-### User Management
-37.	Displays the current logged-in user.
+## User Management
+### 37.	Displays the current logged-in user.
 ````
 whoami
 ````
-38.	Shows currently logged-in users.
+### 38.	Shows currently logged-in users.
 ````
 who
 ````
-39.	Displays the user ID (UID) and group ID (GID).
+### 39.	Displays the user ID (UID) and group ID (GID).
 ````
 id
 ````
-40.	Runs a command as a superuser.
+### 40.	Runs a command as a superuser.
 ````
-sudo [command]
+sudo [command] 
 ````
-41.	Switches to another user account.
+### 41.	Switches to another user account.
 ````
-su [user]
+su [user] 
 ````
-42.	Changes the user password.
+### 42.	Changes the user password.
 ````
 passwd
 ````
-43.	Adds a new user.
+### 43.	Adds a new user.
 ````
-adduser [username]
+adduser [username] 
 ````
-44.	Deletes a user.
+### 44.	Deletes a user.
 ````
-deluser [username]
+deluser [username] 
 ````
 
-### Searching and Finding Files
-
-45.	Searches for a file by name.
+## Searching and Finding Files
+### 45.	Searches for a file by name.
 ````
-find [directory] -name "[filename]"
+find [directory] -name "[filename]" 
 ````
-46.	Quickly finds a file (needs updatedb to be run first).
+### 46.	Quickly finds a file (needs updatedb to be run first).
 ````
-locate [filename]
+locate [filename] 
 ````
-47.	Searches for a pattern in a file.
+### 47.	Searches for a pattern in a file.
 ````
-grep "[pattern]" [file]
+grep "[pattern]" [file] 
 ````
-48.	Searches recursively in a directory.
+### 48.	Searches recursively in a directory.
 ````
-grep -r "[pattern]" [directory]
+grep -r "[pattern]" [directory] 
 ````
-### Compression and Archiving
-49.	Creates a tar archive.
+## Compression and Archiving
+### 49.	Creates a tar archive.
 ````
-tar -cvf archive.tar [files]
+tar -cvf archive.tar [files] 
 ````
-50.	Extracts a tar archive.
+### 50.	Extracts a tar archive.
 ````
 tar -xvf archive.tar
 ````
-51.	Creates a compressed tar archive.
+### 51.	Creates a compressed tar archive.
 ````
 tar -czvf archive.tar.gz [files]
 ````
-52.	Extracts a compressed tar archive.
+### 52.	Extracts a compressed tar archive.
 ````
 tar -xzvf archive.tar.gz
 ````
-53.	Creates a zip archive.
+### 53.	Creates a zip archive.
 ````
 zip archive.zip [files]
 ````
-54.	Extracts a zip archive.
+### 54.	Extracts a zip archive.
 ````
 unzip archive.zip
 ````
-### Package Management
-#### Debian-based (Ubuntu, Debian)
-55.	Updates package lists.
+## Package Management
+## Debian-based (Ubuntu, Debian)
+### 55.	Updates package lists.
 ````
 apt update
 ````
-56.	Installs updates for all packages.
+### 56.	Installs updates for all packages.
 ````
 apt upgrade
 ````
-57.	Installs a package.
+### 57.	Installs a package.
 ````
 apt install [package]
 ````
-58.	Removes a package.
+### 58.	Removes a package.
 ````
 apt remove [package]
 ````
-59.	Installs a .deb package.
+### 59.	Installs a .deb package.
 ````
 dpkg -i [package.deb]
 ````
-#### Red Hat-based (Fedora, CentOS)
-60.	Updates all packages.
+## Red Hat-based (Fedora, CentOS)
+### 60.	Updates all packages.
 ````
 dnf update
 ````
-61.	Installs a package.
+### 61.	Installs a package.
 ````
 dnf install [package]
 ````
-62.	Removes a package.
+### 62.	Removes a package.
 ````
 dnf remove [package]
 ````
-63.	Installs an .rpm package.
+### 63.	Installs an .rpm package.
 ````
 rpm -i [package.rpm]
 ````
-### Text Processing
-64.	Prints text to the terminal.
+## Text Processing
+### 64.	Prints text to the terminal.
 ````
 echo "Hello"
 ````
-65.	Sorts the contents of a file.
+### 65.	Sorts the contents of a file.
 ````
 cat file | sort
 ````
-66.	Removes duplicate lines.
+### 66.	Removes duplicate lines.
 ````
 cat file | uniq
 ````
-67.	Extracts the first column from a file.
+### 67.	Extracts the first column from a file.
 ````
 awk '[print $1}'
 ````
-68.	Replaces text in a file.
+### 68.	Replaces text in a file.
 ````
 sed 's/old/new/g' file
 ````
 
-### System Monitoring
-70.	Shows how long the system has been running.
+## System Monitoring
+### 70.	Shows how long the system has been running.
 ````
 uptime
 ````
-70.	Displays memory usage.
+### 70.	Displays memory usage.
 ````
 free -h
 ````
-71.	Shows system performance statistics.
+### 71.	Shows system performance statistics.
 ````
 vmstat
 ````
-72.	Displays CPU and disk usage statistics.
+### 72.	Displays CPU and disk usage statistics.
 ````
 iostat
 ````
-### Logs and Debugging
-73.	Displays system boot messages.
+## Logs and Debugging
+### 73.	Displays system boot messages.
 ````
 dmesg
 ````
-74.	Views system logs.
+### 74.	Views system logs.
 ````
 journalctl -xe
 ````
-75. Monitors system logs in real-time.
+### 75. Monitors system logs in real-time.
 ````
 tail -f /var/log/syslog 
 ````
-### Shell & Scripting
-76.	Creates a shortcut for a command.
+## Shell & Scripting
+### 76.	Creates a shortcut for a command.
 ````
 alias ll='ls -la'
 ````
-77. Removes an alias.
+### 77. Removes an alias.
 ````
 unalias 1l
 ````
-78. Shows previously executed commands.
+### 78. Shows previously executed commands.
 ````
 history
 ````
-79. Repeats the last command.
+### 79. Repeats the last command.
 ````
 !!
 ````
-80. Repeats the nth command from history.
+### 80. Repeats the nth command from history.
 ````
 !n
 ````

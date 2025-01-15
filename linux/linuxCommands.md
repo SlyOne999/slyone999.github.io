@@ -1,53 +1,53 @@
-## Useful Linux Commands
+# Useful Linux Commands
 
-### Basic Commands
+## Basic Commands
 
-#### 1. Prints the current working directory.
+### 1. Prints the current working directory.
 ````
 pwd
 ````
-#### 2.	Lists files and directories in the current directory.
+### 2.	Lists files and directories in the current directory.
 ````
 ls
 ````
-#### 3.	Changes the current directory to the specified one.
+### 3.	Changes the current directory to the specified one.
 ````
 cd [directory]
 ````
-#### 4.	Creates a new directory.
+### 4.	Creates a new directory.
 ````
 mkdir [directory]
 ````
-#### 5.	Removes an empty directory.
+### 5.	Removes an empty directory.
 ````
 rmdir [directory]
 ````
-#### 6.	Deletes a file.
+### 6.	Deletes a file.
 ````
 rm [file]
 ````
-#### 7.	Deletes a directory and its contents.
+### 7.	Deletes a directory and its contents.
 ````
 rm -r [directory]
 ````
-#### 8.	Copies a file or directory.
+### 8.	Copies a file or directory.
 ````
 cp [source] [destination] 
 `````
-#### 9.	Moves or renames a file/directory.
+### 9.	Moves or renames a file/directory.
 ````
 mv [source] [destination]
 ````
-#### 10. Creates an empty file or updates the timestamp.
+### 10. Creates an empty file or updates the timestamp.
 ````
 touch [file]
 ````
 ### File Viewing Commands
-#### 11. Displays the content of a file.
+### 11. Displays the content of a file.
 ````
 cat [file] 
 ````
-####
+###
 12.	Views a file page by page.
 ````
 less [file] 
@@ -69,17 +69,17 @@ tail -n [number] [file]
 tail -f [file]
 ````
 ### Permissions and Ownership
-#### 17. Changes file permissions.
+### 17. Changes file permissions.
 ````
 chmod [permissions] [file]
 ````
-#### 18.	Changes file ownership.
+### 18.	Changes file ownership.
 ````
 chown [user]:[group] [file] 
 ````
 
 ### Process Management
-#### 19. Displays all running processes.
+### 19. Displays all running processes.
 ````
 ps aux 
 ````
@@ -103,7 +103,7 @@ kilal [processname]
 ````
 pkill [pattern]
 ````
-#### Networking Commands
+### Networking Commands
 25.	Checks network connectivity.
 ````
 ping [hostname/IP]
@@ -133,7 +133,7 @@ curl [URL]
 wget [URL]
 ````
 
-#### Disk and Storage Management
+### Disk and Storage Management
 32.	Displays disk usage in a human-readable format.
 ````
 df -h
@@ -155,7 +155,7 @@ unmount [device]
 lsblk
 ````
 
-#### User Management
+### User Management
 37.	Displays the current logged-in user.
 ````
 whoami
@@ -189,7 +189,7 @@ adduser [username]
 deluser [username]
 ````
 
-#### Searching and Finding Files
+### Searching and Finding Files
 
 45.	Searches for a file by name.
 ````
@@ -207,7 +207,7 @@ grep "[pattern]" [file]
 ````
 grep -r "[pattern]" [directory]
 ````
-#### Compression and Archiving
+### Compression and Archiving
 49.	Creates a tar archive.
 ````
 tar -cvf archive.tar [files]
@@ -232,8 +232,8 @@ zip archive.zip [files]
 ````
 unzip archive.zip
 ````
-#### Package Management
-##### Debian-based (Ubuntu, Debian)
+### Package Management
+#### Debian-based (Ubuntu, Debian)
 55.	Updates package lists.
 ````
 apt update
@@ -254,7 +254,7 @@ apt remove [package]
 ````
 dpkg -i [package.deb]
 ````
-##### Red Hat-based (Fedora, CentOS)
+#### Red Hat-based (Fedora, CentOS)
 60.	Updates all packages.
 ````
 dnf update
@@ -271,7 +271,7 @@ dnf remove [package]
 ````
 rpm -i [package.rpm]
 ````
-#### Text Processing
+### Text Processing
 64.	Prints text to the terminal.
 ````
 echo "Hello"
@@ -293,7 +293,7 @@ awk '[print $1}'
 sed 's/old/new/g' file
 ````
 
-#### System Monitoring
+### System Monitoring
 70.	Shows how long the system has been running.
 ````
 uptime
@@ -310,7 +310,7 @@ vmstat
 ````
 iostat
 ````
-#### Logs and Debugging
+### Logs and Debugging
 73.	Displays system boot messages.
 ````
 dmesg
@@ -323,7 +323,7 @@ journalctl -xe
 ````
 tail -f /var/log/syslog 
 ````
-#### Shell & Scripting
+### Shell & Scripting
 76.	Creates a shortcut for a command.
 ````
 alias ll='ls -la'

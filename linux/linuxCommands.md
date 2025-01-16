@@ -48,7 +48,7 @@ rm -r [directory]
 
 ```bash
 cp [source] [destination] 
-`````
+```
 
 ### Moves or renames a file/directory
 
@@ -142,359 +142,530 @@ kill [PID]
 
 ### Terminates all processes with the given name
 
-````
+```bash
 kilal [processname] 
-````
-### 24. Kills processes by matching a name pattern
-````
+```
+
+### Kills processes by matching a name pattern
+
+```bash
 pkill [pattern] 
-````
+```
+
 ## Networking Commands
-### 25.	Checks network connectivity
-````
+
+### Checks network connectivity
+
+```bash
 ping [hostname/IP] 
-````
-### 26.	Displays network interfaces (deprecated, use ip a)
-````
+```
+
+### Displays network interfaces (deprecated, use ip a)
+
+```bash
 ifconfig
-````
-### 27.	Shows network addresses and interfaces
-````
+```
+
+### Shows network addresses and interfaces
+
+```bash
 ip a
-````
-### 28.	Lists open ports and connections
-````
+```
+
+### Lists open ports and connections
+
+```bash
 netstat -tulnp
-````
-### 29.	Alternative to netstat
-````
+```
+
+### Alternative to netstat
+
+```bash
 ss -tulnp
-````
-### 30.	Fetches a webpage or data from a URL
-````
+```
+
+### Fetches a webpage or data from a URL
+
+```bash
 curl [URL] 
-````
-### 31.	Downloads files from the internet
-````
+```
+
+### Downloads files from the internet
+
+```bash
 wget [URL] 
-````
+```
 
 ## Disk and Storage Management
-### 32.	Displays disk usage in a human-readable format
-````
+
+### Displays disk usage in a human-readable format
+
+```bash
 df -h
-````
-### 33.	Shows the size of a directory
-````
+```
+
+### Shows the size of a directory
+
+```bash
 du -sh
-````
-### 34.	Mounts a filesystem
-````
+```
+
+### Mounts a filesystem
+
+```bash
 mount [device] [directory] 
-````
-### 35.	Unmounts a filesystem
-````
+```
+
+### Unmounts a filesystem
+
+```bash
 unmount [device] 
-````
-### 36.	Lists information about available storage devices
-````
+```
+
+### Lists information about available storage devices
+
+```bash
 lsblk
-````
+```
 
 ## User Management
-### 37.	Displays the current logged-in user
-````
+
+### Displays the current logged-in user
+
+```bash
 whoami
-````
-### 38.	Shows currently logged-in users
-````
+```
+
+### Shows currently logged-in users
+
+```bash
 who
-````
-### 39.	Displays the user ID (UID) and group ID (GID)
-````
+```
+
+### Displays the user ID (UID) and group ID (GID)
+
+```bash
 id
-````
-### 40.	Runs a command as a superuser
-````
+```
+
+### Runs a command as a superuser
+
+```bash
 sudo [command] 
-````
-### 41.	Switches to another user account
-````
+```
+
+### Switches to another user account
+
+```bash
 su [user] 
-````
-### 42.	Changes the user password
-````
+```
+
+### Changes the user password
+
+```bash
 passwd
-````
-### 43.	Adds a new user
-````
+```
+
+### Adds a new user
+
+```bash
 adduser [username] 
-````
-### 44.	Deletes a user
-````
+```
+
+### Deletes a user
+
+```bash
 deluser [username] 
-````
+```
 
 ## Searching and Finding Files
-### 45.	Searches for a file by name
-````
+
+### Searches for a file by name
+
+```bash
 find [directory] -name "[filename]" 
-````
-### 46.	Quickly finds a file (needs updatedb to be run first)
-````
+```
+
+### Quickly finds a file (needs updatedb to be run first)
+
+```bash
 locate [filename] 
-````
-### 47.	Searches for a pattern in a file
-````
+```
+
+### Searches for a pattern in a file
+
+```bash
 grep "[pattern]" [file] 
-````
-### 48.	Searches recursively in a directory
-````
+```
+
+### Searches recursively in a directory
+
+```bash
 grep -r "[pattern]" [directory] 
-````
+```
+
 ## Compression and Archiving
-### 49.	Creates a tar archive
-````
+
+### Creates a tar archive
+
+```bash
 tar -cvf archive.tar [files] 
-````
-### 50.	Extracts a tar archive
-````
+```
+
+### Extracts a tar archive
+
+```bash
 tar -xvf archive.tar
-````
-### 51.	Creates a compressed tar archive
-````
+```
+
+### Creates a compressed tar archive
+
+```bash
 tar -czvf archive.tar.gz [files]
-````
-### 52.	Extracts a compressed tar archive
-````
+```
+
+### Extracts a compressed tar archive
+
+```bash
 tar -xzvf archive.tar.gz
-````
-### 53.	Creates a zip archive
-````
+```
+
+### Creates a zip archive
+
+```bash
 zip archive.zip [files]
-````
-### 54.	Extracts a zip archive
-````
+```
+
+### Extracts a zip archive
+
+```bash
 unzip archive.zip
-````
+```
+
 ## Package Management
-## Debian-based (Ubuntu, Debian)
-### 55.	Updates package lists
-````
+
+### Updates package lists - Debian-based (Ubuntu, Debian)
+
+```bash
 apt update
-````
-### 56.	Installs updates for all packages
-````
+```
+
+### Installs updates for all packages - Debian-based (Ubuntu, Debian)
+
+```bash
 apt upgrade
-````
-### 57.	Installs a package
-````
+```
+
+### Installs a package - Debian-based (Ubuntu, Debian)
+
+```bash
 apt install [package]
-````
-### 58.	Removes a package
-````
+```
+
+### Removes a package - Debian-based (Ubuntu, Debian)
+
+```bash
 apt remove [package]
-````
-### 59.	Installs a .deb package
-````
+```
+
+### Installs a .deb package - Debian-based (Ubuntu, Debian)
+
+```bash
 dpkg -i [package.deb]
-````
-## Red Hat-based (Fedora, CentOS)
-### 60.	Updates all packages
-````
+```
+
+### Updates all packages - Red Hat-based (Fedora, CentOS)
+
+```bash
 dnf update
-````
-### 61.	Installs a package
-````
+```
+
+### Installs a package - Red Hat-based (Fedora, CentOS)
+
+```bash
 dnf install [package]
-````
-### 62.	Removes a package
-````
+```
+
+### Removes a package - Red Hat-based (Fedora, CentOS)
+
+```bash
 dnf remove [package]
-````
-### 63.	Installs an .rpm package
-````
+```
+
+### Installs an .rpm package - Red Hat-based (Fedora, CentOS)
+
+```bash
 rpm -i [package.rpm]
-````
+```
+
 ## Text Processing
-### 64.	Prints text to the terminal
-````
+
+### Prints text to the terminal
+
+```bash
 echo "Hello"
-````
-### 65.	Sorts the contents of a file
-````
+```
+
+### Sorts the contents of a file
+
+```bash
 cat file | sort
-````
-### 66.	Removes duplicate lines
-````
+```
+
+### Removes duplicate lines
+
+```bash
 cat file | uniq
-````
-### 67.	Extracts the first column from a file
-````
+```
+
+### Extracts the first column from a file
+
+```bash
 awk '[print $1}'
-````
-### 68.	Replaces text in a file
-````
+```
+
+### Replaces text in a file
+
+```bash
 sed 's/old/new/g' file
-````
+```
 
 ## System Monitoring
-### 70.	Shows how long the system has been running
-````
-uptime
-````
-### 70.	Displays memory usage
-````
-free -h
-````
-### 71.	Shows system performance statistics
-````
-vmstat
-````
-### 72.	Displays CPU and disk usage statistics
-````
-iostat
-````
-## Logs and Debugging
-### 73.	Displays system boot messages
-````
-dmesg
-````
-### 74.	Views system logs
-````
-journalctl -xe
-````
-### 75. Monitors system logs in real-time
-````
-tail -f /var/log/syslog 
-````
-## Shell & Scripting
-### 76.	Creates a shortcut for a command
-````
-alias ll='ls -la'
-````
-### 77. Removes an alias
-````
-unalias 1l
-````
-### 78. Shows previously executed commands
-````
-history
-````
-### 79. Repeats the last command
-````
-!!
-````
-### 80. Repeats the nth command from history
-````
-!n
-````
 
-View Network Connections
+### Shows how long the system has been running
+
+```bash
+uptime
 ```
+
+### Displays memory usage
+
+```bash
+free -h
+```
+
+### Shows system performance statistics
+
+```bash
+vmstat
+```
+
+### Displays CPU and disk usage statistics
+
+```bash
+iostat
+```
+
+## Logs and Debugging
+
+### Displays system boot messages
+
+```bash
+dmesg
+```
+
+### Views system logs
+
+```bash
+journalctl -xe
+```
+
+### Monitors system logs in real-time
+
+```bash
+tail -f /var/log/syslog 
+```
+
+## Shell & Scripting
+
+### Creates a shortcut for a command
+
+```bash
+alias ll='ls -la'
+```
+
+### Removes an alias
+
+```bash
+unalias 1l
+```
+
+### Shows previously executed commands
+
+```bash
+history
+```
+
+### Repeats the last command
+
+```bash
+!!
+```
+
+### Repeats the nth command from history
+
+```bash
+!n
+```
+
+### View Network Connections
+
+```bash
 watch ss -tp
-````
-Show TCP connections -anu=udp
-````
+```
+
+### Show TCP connections -anu=udp
+
+```bash
 netstat -ant
-`````
-Show UDP connections -anu=udp
-````
+```
+
+### Show UDP connections -anu=udp
+
+```bash
 netstat -anu
-`````
-Connections with PIDs
-````
+```
+
+### Connections with PIDs
+
+```bash
 netstat -tulpn
-````
-Established Connections
-````
+```
+
+### Established Connections
+
+```bash
 lsof -i
-````
-Connect to an SMB Share
-````
+```
+
+### Connect to an SMB Share
+
+```bash
 smb:// ip /share
-````
-Mount Windows share
-````
+```
+
+### Mount Windows share
+
+```bash
 share user x.x.x.x c$
-````
-SMB connect
-````
+```
+
+### SMB connect
+
+```bash
 smbclient -0 user\\\\ ip \\ share
-````
-Set IP and NetMask
-````
+```
+
+### Set IP and NetMask
+
+```bash
 ifconfig eth# ip I cidr
-````
-Set virtual interface
-````
+```
+
+### Set virtual interface
+
+```bash
 ifconfig ethO:l ip I cidr
-````
-Set Gateway
-````
+```
+
+### Set Gateway
+
+```bash
 route add default gw gw lp
-````
-Change the MTU size
-````
+```
+
+### Change the MTU size
+
+```bash
 ifconfig eth# mtu [size]
-````
-Change MAC
-````
+```
+
+### Change MAC 1
+
+```bash
 export l1AC=xx: XX: XX: XX: XX: XX
-````
-Change MAC
-````
+```
+
+### Change MAC 2
+
+```bash
 ifconfig int hw ether
-````
-BackTrack MAC Changer
-````
+```
+
+### BackTrack MAC Changer
+
+```bash
 macchanger -m l1AC int
-````
-Built-in Wifi Scanner
-````
+```
+
+### Built-in Wifi Scanner
+
+```bash
 iwlist int scan
-````
-Domain Lookup for IP
-````
+```
+
+### Domain Lookup for IP
+
+```bash
 dig -x ip
-````
-Domain Lookup fo IP
-````
+```
+
+### Domain Lookup fo IP
+
+```bash
 host ip
-````
-Domain SRV lookup
-````
+```
+
+### Domain SRV lookup
+
+```bash
 host -t SRV service tcp.url.com
-````
-DNS Zone transfer
-````
+```
+
+### DNS Zone transfer 1
+
+```bash
 dig @ ip domain -t AXrR
-````
-DNS Zone transfer
-````
+```
+
+### DNS Zone transfer 2
+
+```bash
 host -1 domain namesvr
-````
-Print VPN Keys 
-````
+```
+
+### Print VPN Keys
+
+```bash
 ip xfrm state list
-````
-Adds 'hidden' interface
-````
+```
+
+### Adds 'hidden' interface
+
+```bash
 ip addr add ip I cidr aev ethO
-````
-List DHCP assignments
-````
+```
+
+### List DHCP assignments
+
+```bash
 /var/log/messages I grep DHCP
-````
-Block an IP:Port
-````
+```
+
+### Block an IP:Port
+
+```bash
 tcpkill host ip and port port
-````
-Turn on Ip Forwarding
-````
+```
+
+### Turn on Ip Forwarding
+
+```bash
 echo "1" /proc/sys/net/ipv4/ip forward
-````
-Add DNS Server
-````
+```
+
+### Add DNS Server
+
+```bash
 echo ''nameserver x.x.x.x'' /etc7resolv.conf
-````
+```

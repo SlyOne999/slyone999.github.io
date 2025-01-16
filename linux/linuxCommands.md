@@ -1,5 +1,8 @@
 # Useful Linux Commands
 
+* TOC
+{:toc} 
+
 ## Basic Commands
 
 ### Prints the current working directory

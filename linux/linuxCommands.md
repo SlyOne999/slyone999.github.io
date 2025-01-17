@@ -1,7 +1,5 @@
 # Useful Linux Commands
 
-* TOC
-{:toc} 
 
 ## Basic Commands
 

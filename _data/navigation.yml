@@ -1,10 +1,10 @@
 # Belongs at: /_data/navigation.yml
 
 - title: Home
-  url: /
+  url: /README
 
 - title: Info - Test
-  url: /
+  url: /index
   sublinks:
     - title: Useful Linux Commands
       url: /linux/linuxCommands

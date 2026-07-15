@@ -53,6 +53,11 @@
   sublinks:
     - title: Academy - Linux
       url: /htb/academy
+- title: Tools
+  url: /tools
+  sublinks:
+    - title: Flipper Zero
+      url: /tools/flipperZero
 - title: Personal Notes
   url: /notes
   sublinks:

@@ -12,10 +12,12 @@
       url: /usefulInfo/usefulLinks
     - title: Network Ports
       url: /usefulInfo/networkPorts
-    - title: Cheatsheets
+    - title: All Cheatsheets
       url: /cheatsheets
-    - title: Proxmox Cheatsheet
-      url: /usefulInfo/proxmoxCheat  
+      sublinks:
+      - title: Proxmox
+        url: /cheatsheets/proxmoxCheat  
+      - title: Reverse Shells  
     - title: Mark Down Examples
       url: /examples/markdown
 - title: Ports and Services

@@ -1,4 +1,4 @@
-##Proxmox Commands – cheat sheet
+## Proxmox Commands – cheat sheet
 
 Proxmox commands cheat sheet terminal output
 Managing Proxmox Virtual Environment (PVE) through the command line can significantly speed up administration tasks, especially when working with multiple nodes or large clusters.
@@ -12,7 +12,7 @@ This Proxmox command cheat sheet provides the most commonly used CLI commands fo
 - Backup & restore
 - System maintenance
 
-###Proxmox Node Commands (Proxmox Commands Cheat Sheet):
+### Proxmox Node Commands (Proxmox Commands Cheat Sheet):
 This Proxmox commands cheat sheet provides the most essential Proxmox CLI commands for system administrators working with Proxmox VE.
 
 
@@ -25,34 +25,60 @@ pveversion
 pvesh get /nodes//status
 ```
 3. List Virtual Machines:
-```qm list
+```bash
+qm list
+```
 4. Start/Stop/Shutdown a VM:
-```qm start  qm stop  qm shutdown 
+```bash
+qm start  qm stop  qm shutdown 
+```
 5. Create a Virtual Machine:
-```qm create  --name  --memory  --net0 virtio,bridge=vmbr0 --cores  --sockets  --virtio0 local::
+```
+qm create  --name  --memory  --net0 virtio,bridge=vmbr0 --cores  --sockets  --virtio0 local::
+```
 6. Show VM Configuration:
-```qm config 
+```
+qm config 
+```
 7. Delete a Virtual Machine:
-```qm destroy 
+```
+qm destroy 
+```
 8. Clone a Virtual Machine:
+```
 qm clone   --name 
+```
 9. Snapshot a Virtual Machine:
+```
 qm snapshot  
+```
 10. Restore VM from Snapshot:
+```
 qm rollback  
-###Storage Commands:
+```
+### Storage Commands:
 11. List Storage:
+```
 pvesh get /storage
+```
 12. Show Storage Configuration:
+```
 pvesh get /storage/
-```Create Storage:
+```
+13. Create Storage:
+```
 pvesh create /storage --storage  --type  --content  --path 
-```Remove Storage:
+```
+14. Remove Storage:
+```
 pvesh delete /storage/
-###Networking Commands:
-```List Network Interfaces:
+```
+### Networking Commands:
+15. List Network Interfaces:
+```
 ifconfig -a
-```List Bridges:
+```
+### List Bridges:
 brctl show
 ```List Firewall Rules:
 iptables -L -n

@@ -80,30 +80,55 @@ ifconfig -a
 16. List Bridges:
 ```bash
 brctl show
-```List Firewall Rules:
+```
+17. List Firewall Rules:
+```bash 
 iptables -L -n
-```Configure Network:
+```
+18. Configure Network:
+```bash 
 nano /etc/network/interfaces
+```
 ###Cluster Commands:
-```Display Cluster Status:
+19. Display Cluster Status:
+```bash
 pvecm status
-```Join a Node to the Cluster:
+```
+20. Join a Node to the Cluster:
+```bash
 pvecm add 
-```Remove a Node from the Cluster:
+```
+21. Remove a Node from the Cluster:
+```bash
 pvecm delnode 
-Show Quorum Status:
+```
+22. Show Quorum Status:
+```bash
 pvecm quorum
+```
 Display CIB (Cluster Information Base):
+```bash
 corosync-cmapctl
-Maintenance Commands:
+```
+### Maintenance Commands:
 Update Proxmox VE:
+```bash
 apt update apt dist-upgrade
+```
 Reboot Node:
+```bash
 reboot
+```
 Check for Updates:
+```bash
 pveupdate check
+```
 Backup VM:
+```bash
 vzdump  --compress  --storage 
+```
 Restore VM from Backup:
+```bash
 vzrestore  
+```
 These commands should help you perform various tasks and manage your Proxmox environment from the command line. Adjust the parameters based on your specific configurations and requirements.

@@ -57,7 +57,9 @@
   url: /tools
   sublinks:
     - title: Flipper Zero
-      url: /tools/flipperZero
+      url: /tools/flipper
+    - title: Pineapple
+      url: /tools/pineapple
 - title: Personal Notes
   url: /notes
   sublinks:

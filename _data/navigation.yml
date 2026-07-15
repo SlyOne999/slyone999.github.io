@@ -8,7 +8,7 @@
   sublinks:
     - title: Useful Linux Commands
       url: /linux/linuxCommands
-    - title: Useful Links and Resources
+    - title: Useful Links & Resources
       url: /usefulInfo/usefulLinks
     - title: Network Ports
       url: /usefulInfo/networkPorts
@@ -22,9 +22,9 @@
   url: /usefulInfo/enum
   sublinks:
     - title: DNS
-      url: /usefulInfo/enum/dns
+      url: /usefulInfo/enum/53dns
     - title: RPC
-      url: /usefulInfo/enum/rpc
+      url: /usefulInfo/enum/111rpc
     - title: Network Ports
       url: /usefulInfo/networkPorts
     - title: Hacking Cheat sheet

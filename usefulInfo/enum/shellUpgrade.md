@@ -2,13 +2,9 @@
 
 
 
-Upgrading Shell
+### Upgrading Shell
 
-
-
-
-
-
+```bash
 $ python3 -c 'import pty;pty.spawn("/bin/bash")'
 
 $ export TERM=xterm
@@ -19,5 +15,6 @@ $ stty raw -echo
 
 $ fg # And press two times enter to foreground the shell
 
+```
 
 https://github.com/rapid7/metasploit-framework/issues/14369 

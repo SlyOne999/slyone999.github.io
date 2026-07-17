@@ -6,9 +6,6 @@
 [//]: # (#### -- 2 spaces before)
 [//]: # (##### -- 1 space before)
 
-* TOC
-{:toc}
-
 ## Tool ##
 **Pineapple**
 

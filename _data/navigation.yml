@@ -61,6 +61,10 @@
       url: /tools/burp
     - title: Cardputer
       url: /tools/cardputer
+    - title: ESP32
+      url: /tools/esp32
+    - title: O. MG. Cable
+      url: /tools/omg
 - title: Personal Notes
   url: /notes
   sublinks:

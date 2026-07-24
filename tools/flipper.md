@@ -1,14 +1,7 @@
-[**slyone999 Tool Descriptions **] (https://slyone999.github.io)
+# Tool #
 
-[//]: # (# -- 5 spaces before)
-[//]: # (## -- 4 spaces before)
-[//]: # (### -- 3 spaces before)
-[//]: # (#### -- 2 spaces before)
-[//]: # (##### -- 1 space before)
+## Flipper Zero ##
 ![alt text](/images/zero_landing_whats-inside.jpg?raw=true)
-
-## Tool ##
-**Flipper Zero**
 
 ## Description ##
 The Flipper Zero is a portable, pocket-sized multi-tool device designed for hardware exploration, penetration testing, and digital electronics enthusiasts. Wrapped in a playful, toy-like body, it features a retro-styled digital cyber-dolphin pet that "feeds" on your interactions with digital systems and radio protocol

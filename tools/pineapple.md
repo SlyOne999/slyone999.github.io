@@ -1,5 +1,3 @@
-![alt text](/images/WiFi-Pineapple-Review.jpg?raw=true)
-
 ## Tool ##
 ## Pineapple ##
 ![alt text](/images/WiFi-Pineapple-Review.jpg?raw=true)

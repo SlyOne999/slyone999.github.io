@@ -57,6 +57,10 @@
       url: /tools/flipper
     - title: Pineapple
       url: /tools/pineapple
+    - title: Burp Suite
+      url: /tools/burp
+    - title: Cardputer
+      url: /tools/cardputer
 - title: Personal Notes
   url: /notes
   sublinks:

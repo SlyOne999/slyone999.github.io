@@ -40,10 +40,10 @@ The system features dynamic external sensor wakeups (PIR/vibration) to conserve 
 
 This project supports two different hardware branches. Click on the module you are using to access its custom source code, unique wiring pinout, and build instructions:
 
-*   ### [👉 Option 1: Modern Build Guide (ESP32-S3)](./ESP32-S3.md)
+*   ### [👉 Option 1: Modern Build Guide (ESP32-S3)](./ESP32-S3)
     *Uses the modern, robust `driver/i2s_std.h` hardware library.*
 
-*   ### [👉 Option 2: Legacy Build Guide (Standard Non-S3 ESP32)](./ESP32-Standard.md)
+*   ### [👉 Option 2: Legacy Build Guide (Standard Non-S3 ESP32)](./ESP32-Standard)
     *Uses the legacy monolithic `driver/i2s.h` driver for older generation hardware.*
 
 ---

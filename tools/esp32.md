@@ -1,5 +1,4 @@
-## Tool ##
-## ESP32 Microcontroller ##
+# ESP32 Microcontroller #
 ![alt text](/images/ESP32.jpg)
 
 ## Description ##

@@ -1,5 +1,4 @@
-## Tool ##
-## Single Board Computer ##
+# Single Board Computer #
 
 ![alt text](/images/m5stack-cardputer-adv-m5stack-k132-adv-1212841315_1000x.webp?raw=true)
 

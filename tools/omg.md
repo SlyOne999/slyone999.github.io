@@ -1,5 +1,5 @@
-## Tool ##
-## O.MG Cable ##
+
+# O.MG Cable #
 ![alt text](/images/OMG.webp?raw=true)
 
 ## Description ##

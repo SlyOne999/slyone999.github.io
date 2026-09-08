@@ -1,6 +1,4 @@
-# Tool #
-
-## Flipper Zero ##
+# Flipper Zero #
 ![alt text](/images/zero_landing_whats-inside.jpg?raw=true)
 
 ## Description ##
@@ -36,4 +34,3 @@ BadUSB Attacks:
     Mimicking a physical USB keyboard when plugged into a computer. The Flipper automatically types pre-programmed commands at hyper-speed to inject malware, exfiltrate files, or open backdoors in seconds.
 Wi-Fi Deauthentication: 
     Forcing devices to disconnect from a local network. This attack requires an external Wi-Fi development board accessory and is often used to capture network handshakes or disrupt IoT systems.
-    

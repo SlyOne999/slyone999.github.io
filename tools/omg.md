@@ -8,34 +8,13 @@ The O.MG Cable is a hand made USB cable with an advanced implant hidden inside. 
 The uncompromising attention to the physical size of the cable isn't where we stopped. Thanks to continual firmware updates, the resulting power, flexibility, and ease of use have made the O.MG Cable a favorite for both new students and seasoned pros. 
 
 ## Usage ##
-Easy WiFi Control
-Full control with your web browser. Desktop or mobile.
-Keystroke Injection
-Instant DuckyScript payloads. No recompiling or reprogramming, just click run! And with industry-leading 890keys/sec speeds.
-Lots of Payload slots
-Basic model comes with 8 slots. Elite has extra storage allowing up to 300 slots!
-Global Keymaps
-With 192 keymaps already built in, you can target machines across the world.
-Built in IDE
-The WebUI not only provides 100% of the controls, but also gives you helpful feedback to catch syntax errors while rapidly building payloads.
-Mobile Payloads
-Cables with a USB-C active end, or Directional C to C, can automatically transmit to mobile devices with a USB-C connector. Connect just the active end!
-Stealth
-The implant stays dormant until a payload is deployed. No logs. No detections. The cable behaves just like a normal USB 2.0 cable. (5v charging, 480mps data transfer) Spoof any USB identifer (VID/PID), extended USB Identifier, and network MAC address.
-Hardware Keylogger
-Elite models contain a passive hardware keylogger designed for FullSpeed USB keyboards with detachable cables. Store up to 650,000 keystrokes. For tested keyboards & more info go here.
-HIDX StealthLink
-Elite models: setup a bidirectional tunnel from Target Host > O.MG > Control Machine.
-Encrypted Network C2
-Elite models: Use an encrypted connection to access & control your O.MG from anywhere. Then disable the onboard WebUI to hide and protect your O.MG on untrusted networks. Compatible with any server that runs python.
-Self-Destruct
-Make your legal team happy by ensuring sensitive payloads & loot are gone, and the O.MG Cable is fully inert. (recoverable with O.MG Programmer)
-Geo-Fencing
-Trigger payloads or other actions based on location. Keep your tool from falling out of scope! Ex: self-destruct if someone takes the O.MG Cable home.
-WiFi Triggers
-Trigger payloads at long range with a single beacon.
+While the cable successfully charges phones and transfers data normally to avoid suspicion, it hides a miniature web server, a Wi-Fi chip, and a keystroke injector inside its tiny USB connector:Built-in Wi-Fi Access Point: Transmits its own hidden wireless network, allowing an attacker to connect to the cable remotely from miles away using a smartphone or laptop.Keystroke Injection (BadUSB): Mimics a human keyboard to inject pre-programmed malicious commands into whatever computer or device it is plugged into.Web UI Management: Features an easy-to-use, smartphone-friendly control dashboard for launching attacks visually in real-time.Geofencing & Self-Destruct: Can be programmed to only execute payloads when the attacker is physically nearby, or completely wipe its own memory if it detects it is being analyzed.Keylogging (Specific Models): The "Keylogger" version of the cable can actively record every password and message typed on a keyboard passed through it, saving the data to internal memory.
 
 ## Attacks ##
-
+ Remote Payload Execution
+ 1. Over-the-Air Triggers: Unlike the USB Rubber Ducky, which triggers the second it is plugged in, an attacker can leave an O.M.G. Cable plugged into a target computer for weeks and remotely trigger a malicious payload via Wi-Fi at the exact moment the victim leaves their desk.
+ 2. Hardware KeyloggingPassword and Credential Sniffing: If used to connect a target's physical keyboard to a desktop computer, the cable silently intercepts every keystroke, capturing corporate login credentials, bank passwords, and private messages.
+ 3. Smartphone ExploitationMobile Terminal Access: When plugged into an unlocked Android or iOS device, the cable can inject mobile shortcuts to open browsers, download malicious files, or exfiltrate local device information.
+ 4. Stealth DeploymentThe "Gifted Accessory" Attack: Because it looks identical to an official Apple or Samsung cable—even down to the weight and texture—attackers can mix it into an office supply closet, leave it in a conference room, or gift it directly to a high-value target.
 
 

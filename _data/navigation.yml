@@ -28,12 +28,8 @@
       url: /usefulInfo/enum/53dns
     - title: RPC
       url: /usefulInfo/enum/111rpc
-    - title: Network Ports
-      url: /usefulInfo/networkPorts
     - title: Hacking Cheat sheet
       url: /cheatsheets
-    - title: Mark Down Examples
-      url: /examples/markdown
 - title: Windows Machine Write-Ups
   url: /htb
   sublinks:

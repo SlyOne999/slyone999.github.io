@@ -17,9 +17,9 @@ Web UI Dashboard:
     A clean, graphical web panel accessible from any browser (on a laptop or smartphone) that allows users to monitor traffic and launch attacks with a single click.
 
 ## Attacks ##
-Wireless Auditing: 
+1. Wireless Auditing 
     Network administrators use it to map wireless airspace, discover rogue access points, and test the resilience of corporate networks.
-Evil Twin Attacks: 
+2. Evil Twin Attacks
     The device broadcasts familiar network names (SSIDs) that nearby phones or laptops have previously connected to, tricking these devices into auto-connecting to the Pineapple instead of the legitimate network.
-Man-in-the-Middle (MitM) Interception: 
+3. Man-in-the-Middle (MitM) Interception
     Once a device is tricked into connecting, the Pineapple sits between the user and the internet, allowing the tester to inspect passing traffic.Credential Harvesting: It can deploy custom web pages—such as a fake airport or cafe login screen—to trick users into voluntarily entering their usernames and passwords.

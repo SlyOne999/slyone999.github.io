@@ -57,14 +57,19 @@
       url: /tools/flipper
     - title: Pineapple
       url: /tools/pineapple
-    - title: Burp Suite
-      url: /tools/burp
     - title: Cardputer
       url: /tools/cardputer
-    - title: ESP32
+    - title: ESP32 Microcontroller
       url: /tools/esp32
+    - title: ESP32 Maurader
+      url: /tools/esp32maurader
     - title: O. MG. Cable
       url: /tools/omg
+    - title: Rubber Ducky
+      url: /tools/rubberducky
+    - title: Single Board Computer
+      url: /tools/sbc
+
 - title: Personal Notes
   url: /notes
   sublinks:

@@ -1,6 +1,6 @@
 ## Tool ##
 ## ESP32 ##
-![alt text](/images/WiFi-Pineapple-Review.jpg?raw=true)
+![alt text](/images/ESP32.jpg)
 
 ## Description ##
 The WiFi Pineapple is used for probing the security of wireless networks by simulating a conventional access point where it attracts unsuspecting users. It has two network interfaces: one for providing internet access and the other for interacting with nearby Wi-Fi devices.

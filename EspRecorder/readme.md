@@ -10,7 +10,7 @@ The system features dynamic external sensor wakeups (PIR/vibration) to conserve 
 
 ### Core Microcontrollers (Choose your build variant)
 *   **ESP32-S3 Variant:** 1x ESP32-S3 Development Board (e.g., *ESP32-S3-DevKitC-1* or *Seeed Studio XIAO ESP32S3*)
-*   **Standard Variant:** 1x Standard ESP32 Development Board (e.g., *NodeMCU ESP32 / ESP-WROOM-32*)
+*   **Standard Variant:** 1x Standard ESP32 Development Board (Specifically the 30-pin ESP-WROOM-32 / NodeMCU board variant)
 
 ### Audio & Sensors
 *   1x INMP441 I2S Digital MEMS Microphone Module

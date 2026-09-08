@@ -1,27 +1,32 @@
-# 💾 Legacy Build Guide: Standard Non-S3 ESP32
+# 💾 Legacy Build Guide: Standard Non-S3 ESP32 (30-Pin WROOM-32)
 
-This page details the implementation for the original legacy **Standard ESP32** variant using the classic `driver/i2s.h` configurations.
+This page details the implementation for the original legacy **Standard ESP32** variant using the classic `driver/i2s.h` configurations. These instructions are optimized specifically for the common **30-pin ESP-WROOM-32 NodeMCU development board**.
 
-> ⚠️ **Compiler Warning:** This legacy sketch requires `ESP32` board core library version **2.x.x** within the Arduino IDE. Version 3.x.x and above removes these legacy driver configurations.
+> ⚠️ **Compiler Warning:** This legacy sketch requires `ESP32` board core library version **2.x.x** within the Arduino IDE boards manager. Version 3.x.x and above removes these legacy driver configurations entirely.
 
-## 🧮 Hardware Wiring Matrix
+---
 
-### 1. INMP441 Microphone to Standard ESP32
-*   **VDD** ➡️ ESP32 **3.3V**
+## 🧮 Hardware Wiring Matrix (30-Pin Layout)
+
+Because 30-pin ESP32 boards have a reduced pinout compared to 38-pin variants, the following pins have been carefully selected to avoid conflicts with strapping pins or internal flash memory.
+
+### 1. INMP441 Microphone to 30-Pin ESP32
+*   **VDD** ➡️ ESP32 **3V3** (Pin 1, top-left)
 *   **GND** ➡️ ESP32 **GND**
 *   **SD (Serial Data)** ➡️ ESP32 **GPIO 32**
 *   **SCK (Serial Clock)** ➡️ ESP32 **GPIO 14**
 *   **WS (Word Select)** ➡️ ESP32 **GPIO 15**
-*   **L/R (Left/Right)** ➡️ Bridge to the mic's own **GND** pin (sets mono channel)
+*   **L/R (Left/Right)** ➡️ Bridge to the mic's own **GND** pin (sets mono channel mode)
 
 ### 2. Sensor & Debugging LEDs
-*   **Wakeup Sensor Digital Out (DO)** ➡️ ESP32 **GPIO 2**
-*   **Blue LED Anode (+)** ➡️ 220Ω Resistor ➡️ ESP32 **GPIO 10** (Cathode to GND)
-*   **Red LED Anode (+)** ➡️ 220Ω Resistor ➡️ ESP32 **GPIO 11** (Cathode to GND)
+*   **Wakeup Sensor Digital Out (DO)** ➡️ ESP32 **GPIO 12** *(Note: Shifted to GPIO 12 on the 30-pin layout to support stable RTC wakeup capabilities).*
+*   **Blue LED Anode (+)** ➡️ 220Ω Resistor ➡️ ESP32 **GPIO 26** (Cathode to GND)
+*   **Red LED Anode (+)** ➡️ 220Ω Resistor ➡️ ESP32 **GPIO 27** (Cathode to GND)
 
 ### 3. Battery Voltage Divider Telemetry
+On the 30-pin layout, we route battery sensing to **GPIO 34**, which links to the hardware-stable **ADC1_CH6** to ensure clean analog readings alongside live Wi-Fi activity.
 ```text
-    Battery (+) ───[ 100kΩ Resistor ]───┬───► ESP32 GPIO 4 (ADC1_CH1)
+    Battery (+) ───[ 100kΩ Resistor ]───┬───► ESP32 GPIO 34 (ADC1_CH6)
                                         │
                                   [ 100kΩ Resistor ]
                                         │
@@ -40,14 +45,16 @@ const char* ap_ssid     = "ESP32_Audio_Mic";
 const char* ap_password = "SecurePassword123";
 WiFiServer server(8080);
 
+// I2S Interface Pins
 #define I2S_SD  32
 #define I2S_SCK 14
 #define I2S_WS  15
 
-#define WAKEUP_PIN GPIO_NUM_2       
-#define BLUE_LED   10       
-#define RED_LED    11       
-#define BATTERY_PIN 4          
+// 30-Pin Optimized Control Pins
+#define WAKEUP_PIN GPIO_NUM_12       
+#define BLUE_LED   26       
+#define RED_LED    27       
+#define BATTERY_PIN 34          
 
 #define ADC_MAX_MV 3300        
 #define ADC_RESOLUTION 4095.0  

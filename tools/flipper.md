@@ -14,13 +14,26 @@ The device acts as a universal Swiss Army knife for wireless signals and access 
 ## Attacks ##
 
 ### Wireless & Radio Attacks
-Replay Attacks: Capturing an unencrypted radio signal (like a garage door remote or ceiling fan) and re-transmitting it later to trigger the action.
-Signal Jamming: Flooding specific sub-GHz radio frequencies with constant noise to prevent legitimate remotes from opening gates or car doors.Rolljam Attacks: Jamming a rolling-code wireless receiver while capturing the user's unlock code, allowing the attacker to use that valid code later.
-BLE Spamming: Overwhelming nearby smartphones and tablets with thousands of continuous Bluetooth pairing prompts, forcing the target devices to crash or freeze.
+Replay Attacks: 
+    Capturing an unencrypted radio signal (like a garage door remote or ceiling fan) and re-transmitting it later to trigger the action.
+Signal Jamming: 
+    Flooding specific sub-GHz radio frequencies with constant noise to prevent legitimate remotes from opening gates or car doors.
+Rolljam Attacks: 
+    Jamming a rolling-code wireless receiver while capturing the user's unlock code, allowing the attacker to use that valid code later.
+BLE Spamming: 
+    Overwhelming nearby smartphones and tablets with thousands of continuous Bluetooth pairing prompts, forcing the target devices to crash or freeze.
+
 ### Physical Access & Cloning Attacks
-RFID/NFC Badge Cloning: Scanning low-frequency building entry badges (like hotel key cards or older corporate fobs) and copying the data onto blank cards or emulating the badge directly from the Flipper.
-UID Sniffing: Reading the public Unique Identifier (UID) numbers of modern contactless cards to fool basic, poorly configured access readers.
-iButton Emulation: Reading and mimicking the physical touch-keys used for older apartment entry gates and utility systems.
+RFID/NFC Badge Cloning: 
+    Scanning low-frequency building entry badges (like hotel key cards or older corporate fobs) and copying the data onto blank cards or emulating the badge directly from the Flipper.
+UID Sniffing: 
+    Reading the public Unique Identifier (UID) numbers of modern contactless cards to fool basic, poorly configured access readers.
+iButton Emulation: 
+    Reading and mimicking the physical touch-keys used for older apartment entry gates and utility systems.
+
 ### Hardware & Endpoint Attacks
-BadUSB Attacks: Mimicking a physical USB keyboard when plugged into a computer. The Flipper automatically types pre-programmed commands at hyper-speed to inject malware, exfiltrate files, or open backdoors in seconds.
-Wi-Fi Deauthentication: Forcing devices to disconnect from a local network. This attack requires an external Wi-Fi development board accessory and is often used to capture network handshakes or disrupt IoT systems.
+BadUSB Attacks: 
+    Mimicking a physical USB keyboard when plugged into a computer. The Flipper automatically types pre-programmed commands at hyper-speed to inject malware, exfiltrate files, or open backdoors in seconds.
+Wi-Fi Deauthentication: 
+    Forcing devices to disconnect from a local network. This attack requires an external Wi-Fi development board accessory and is often used to capture network handshakes or disrupt IoT systems.
+    

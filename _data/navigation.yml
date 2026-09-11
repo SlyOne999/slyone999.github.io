@@ -65,6 +65,18 @@
       url: /tools/rubberducky
     - title: Single Board Computer
       url: /tools/sbc
+    - title: Bash Bunny
+      url: /tools/bashbunny
+    - title: Shark Jack
+      url: /tools/sharkjack
+    - title: Packet Jack
+      url: /tools/packetjack
+    - title: Lan Turtle
+      url: /tools/lanturtle
+    - title: Screen Crab
+      url: /tools/screencrab
+    - title: Key Croc
+      url: /tools/keycroc
 
 - title: Personal Notes
   url: /notes

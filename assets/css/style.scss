@@ -1,7 +1,7 @@
 ---
 ---
-
 @import "jekyll-theme-minimal";
+
 .sidebar,
 .side-bar,
 nav.site-nav,
@@ -10,10 +10,12 @@ nav.site-nav,
     overflow-x: hidden;
     max-height: 100vh;
 }
+
 .nav-list,
 .navigation-list {
     overflow: visible;
 }
+
 .sidebar::-webkit-scrollbar {
     width: 10px;
 }

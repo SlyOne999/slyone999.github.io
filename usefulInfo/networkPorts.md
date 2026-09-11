@@ -24,7 +24,7 @@
 |49	|TACACS Login Host protocol. TACACS+, still in draft which is an improved but distinct version of TACACS, only uses TCP 49.	|
 |51	|Historically used for Interface Message Processor logical address management, entry has been removed by IANA on 2013-05-25	|
 |52	|Xerox Network Systems (XNS) Time Protocol. Despite this port being assigned by IANA, the service is meant to work on SPP (ancestor of IPX/SPX), instead of TCP/IP.	|
-|[53](/enum/53dns)	|Domain Name System (DNS)	|
+|[53](/usefulInfo/enum/53dns)	|Domain Name System (DNS)	|
 |54	|Xerox Network Systems (XNS) Clearinghouse (Name Server). Despite this port being assigned by IANA, the service is meant to work on SPP (ancestor of IPX/SPX), instead of TCP/IP.	|
 |56	|Xerox Network Systems (XNS) Authentication Protocol. Despite this port being assigned by IANA, the service is meant to work on SPP (ancestor of IPX/SPX), instead of TCP/IP.	|
 |58	|Xerox Network Systems (XNS) Mail. Despite this port being assigned by IANA, the service is meant to work on SPP (ancestor of IPX/SPX), instead of TCP/IP.	|
@@ -50,7 +50,7 @@
 |108	|IBM Systems Network Architecture (SNA) gateway access server	|
 |109	|Post Office Protocol, version 2 (POP2)	|
 |110	|Post Office Protocol, version 3 (POP3)	|
-|[111](/enum/111rpc)	|Open Network Computing Remote Procedure Call (ONC RPC, sometimes referred to as Sun RPC)	|
+|[111](/usefulInfo/enum/111rpc)	|Open Network Computing Remote Procedure Call (ONC RPC, sometimes referred to as Sun RPC)	|
 |113|No	Official	Ident, authentication service/identification protocol, used by IRC servers to identify users	|
 ||Authentication Service (auth), the predecessor to identification protocol. Used to determine a user's identity of a particular TCP connection.	|
 |115	|Simple File Transfer Protocol	|

@@ -28,17 +28,8 @@
       url: /usefulInfo/enum/53dns
     - title: RPC
       url: /usefulInfo/enum/111rpc
-    - title: Network Ports
-      url: /usefulInfo/networkPorts
     - title: Hacking Cheat sheet
       url: /cheatsheets
-    - title: Mark Down Examples
-      url: /examples/markdown
-- title: Challenge Write-Ups
-  url: /htb
-  sublinks:
-    - title: 0xDiablos
-      url: /htb/diablos
 - title: Windows Machine Write-Ups
   url: /htb
   sublinks:
@@ -48,6 +39,8 @@
       url: /htb/netmon
     - title: Blue - Windows
       url: /htb/blue
+    - title: 0xDiablos
+      url: /htb/diablos
 - title: Linux Machine Write-Ups
   url: /htb
   sublinks:
@@ -60,6 +53,19 @@
       url: /tools/flipper
     - title: Pineapple
       url: /tools/pineapple
+    - title: Cardputer
+      url: /tools/cardputer
+    - title: ESP32 Microcontroller
+      url: /tools/esp32
+    - title: ESP32 Maurader
+      url: /tools/esp32maurader
+    - title: O. MG. Cable
+      url: /tools/omg
+    - title: Rubber Ducky
+      url: /tools/rubberducky
+    - title: Single Board Computer
+      url: /tools/sbc
+
 - title: Personal Notes
   url: /notes
   sublinks:

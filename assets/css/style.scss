@@ -2,3 +2,23 @@
 ---
 
 @import "jekyll-theme-minimal";
+.sidebar,
+.side-bar,
+nav.site-nav,
+.navigation {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100vh;
+}
+.nav-list,
+.navigation-list {
+    overflow: visible;
+}
+.sidebar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 5px;
+}

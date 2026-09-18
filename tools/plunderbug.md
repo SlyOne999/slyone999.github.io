@@ -7,9 +7,9 @@ The Plunder Bug is a pocket-sized, intelligent LAN tap designed for security aud
 ## Usage ##
 Unlike older, bulky LAN taps that require additional Ethernet cables and custom configurations, the Plunder Bug streamlines network diagnostics into a single physical unit:USB-C Mirroring: Clones all network frames flowing between its two physical RJ45 ports and pumps them straight into a laptop or monitoring host over a single USB-C connection.
 
-- Cross-Platform Compatibility: Bundled with dedicated connection scripts for Windows, macOS, and Linux, allowing standard packet sniffers like Wireshark to recognize the tap instantly as an extra network interface.Mobile 
+- Cross-Platform Compatibility: Bundled with dedicated connection scripts for Windows, macOS, and Linux, allowing standard packet sniffers like Wireshark to recognize the tap instantly as an extra network interface. 
 
-- Packet Capture: Supports a dedicated companion Android root app, allowing users to plug the tap directly into a smartphone to record live network PCAP data on the move.
+- Mobile Packet Capture: Supports a dedicated companion Android root app, allowing users to plug the tap directly into a smartphone to record live network PCAP data on the move.
 
 - Active/Passive Dual Modes: Can be configured via software to act as a purely passive, silent listener (Muted) or as an active participant on the network segment (Unmuted).Multipurpose Utility: Outside of security auditing, it functions natively as a standard USB-to-Ethernet adapter or as a simple 3-port unmanaged micro-switch.
 

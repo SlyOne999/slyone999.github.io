@@ -10,7 +10,7 @@ The ESP32 Wireless Audio Streaming Hotspot (also referred to as the ESP Recorder
 ## Usage ## 
 The device acts as a covert, standalone listening post that monitors physical spaces and pushes live feeds to a remote receiver:
 
-High-Fidelity Audio Capture: 
+### High-Fidelity Audio Capture ###
 
 Uses an INMP441 I2S digital MEMS microphone module to intercept crisp, high-quality audio directly from its surroundings.
 

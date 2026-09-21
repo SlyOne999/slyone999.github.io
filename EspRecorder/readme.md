@@ -1,9 +1,47 @@
-# 🎙️ ESP32 Wireless Audio Streaming Hotspot
+# ESP32 Wireless Audio Streaming Hotspot #
 
+## Description ##
 An open-source, ultra-portable wireless audio transmitter that captures high-quality live audio using an I2S digital MEMS microphone and streams it over a private, standalone Wi-Fi Access Point (AP). 
 
 The system features dynamic external sensor wakeups (PIR/vibration) to conserve battery, hardware status LEDs, an integrated battery telemetry monitor, and a Python client script to save incoming recordings automatically into organized, dated folders.
 
+The ESP32 Wireless Audio Streaming Hotspot (also referred to as the ESP Recorder) is an open-source, ultra-portable hardware bugging and acoustic surveillance platform. Built using a low-cost ESP32 microcontroller and a digital MEMS microphone, it records live environmental audio and streams it remotely over a private, standalone Wi-Fi network.
+
+## Usage ## 
+The device acts as a covert, standalone listening post that monitors physical spaces and pushes live feeds to a remote receiver:
+
+High-Fidelity Audio Capture: 
+
+    Uses an INMP441 I2S digital MEMS microphone module to intercept crisp, high-quality audio directly from its surroundings.
+Standalone Wi-Fi Hotspot: 
+    Spins up its own private Wi-Fi Access Point (ESP32_S3_Audio_Mic), removing the need for a local internet connection or router.
+Sensor-Driven Wakeups: 
+    Connects to dynamic external sensors—like the AM312 Mini PIR motion sensor or SW-420 vibration sensor—to stay asleep until movement or physical vibrations trigger active streaming.
+Automated Python Logging: 
+    Pairs with a desktop client script that automatically captures the raw network audio stream, processes it into standard .wav files, and manages disk space by auto-deleting records older than 7 days.
+Long-Term Battery Operation: 
+    Combines deep sleep modes with integrated battery telemetry scaling and a TP4056 lithium charging module to run covertly for extended periods.
+    
+ ## Attacks ##
+
+ 1. Audio Eavesdropping & Room Bugging
+
+    Acoustic Surveillance: 
+    
+        Deploying the non-metallic, disguised enclosure into a room, vehicle, or workspace to actively record conversations. The operator sits safely out of sight within Wi-Fi range to pull the live feed via a connected laptop.
+
+2. Event-Triggered Reconnaissance
+
+    Motion & Boundary Alerts: 
+        
+        Configuring the system to wake up exclusively when someone approaches an asset (using the PIR module) or opens a desk drawer/door (using the vibration sensor). This lets attackers map out exactly when physical security boundaries are being breached without wasting battery power.
+
+3. Continuous Room Logging
+
+    Automated Exfiltration: 
+        
+        Leveraging the companion script to automatically dump daily audio logs into neatly indexed folders on a remote host. This enables seamless, continuous archiving of space telemetry over days or weeks.
+        
 ---
 
 ## 🛠️ Global Project Shopping List (BOM)

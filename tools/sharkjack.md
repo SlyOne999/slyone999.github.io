@@ -22,18 +22,24 @@ Uses a single multi-colour LED to communicate its current status to the operator
 
 ### Rapid Network Reconnaissance ### 
 **Network Mapping (Nmap Scans)** 
+
 Automatically scanning the local network segment the instant it is plugged in. It maps out active IP addresses, discovers connected devices (like servers, printers, and workstations), and identifies open, vulnerable ports.
-** DHCP Sniffing & Spoofing **
+
+**DHCP Sniffing & Spoofing**
+
 Intercepting the network's automated IP assignment process to identify critical network gateway addresses and DNS server configurations.
 
 ### Credential & Hash Harvesting ### 
 **Responder Attacks** 
+
 Running tools that listen for local network broadcast name resolutions (like LLMNR or NetBIOS). When a nearby Windows machine attempts to look up a network asset, the Shark Jack answers, tricking the machine into sending over its cryptographic password hashes.
 
 ### Endpoint & Port Spoofing ### 
 **MAC Address Cloning** 
+
 Copying the media access control (MAC) address of a legitimate corporate device (like a network printer or VoIP desk phone). This bypasses Network Access Control (NAC) security systems that block unapproved devices from connecting to the office network.
 
 ### Establishing Remote Access ###
 **Reverse Shell Deployment** 
+
 If the local network has an open connection out to the public internet, the Shark Jack can automatically dial out to a remote cloud server controlled by the attacker, opening an encrypted backdoor tunnel into the target's internal infrastructure.

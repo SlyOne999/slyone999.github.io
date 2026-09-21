@@ -1,5 +1,5 @@
 # Bash Bunny #
-![alt text](/images/WiFi-Pineapple-Review.jpg?raw=true)
+![alt text](/images/bashbunny.jpg?raw=true)
 
 ## Description ##
 The Bash Bunny is a highly advanced, multi-payload USB attack platform designed for physical penetration testing and social engineering. Developed by Hak5, it looks like an ordinary, slightly oversized USB flash drive, but it houses a powerful desktop-class Linux computer capable of executing complex, automated multi-stage attacks in seconds.
@@ -22,24 +22,24 @@ Uses a programmable multi-colour LED to visually communicate its precise executi
 
 ### Network Interface Hijacking (Quick Credentials) ###
 
-** Lock-Screen Password Harvesting (Quick Creds) **
+**Lock-Screen Password Harvesting (Quick Creds)**
 
 When plugged into a locked computer, the Bash Bunny instantly emulates a high-speed Ethernet adapter. The locked operating system automatically shifts its network routing through the Bunny, allowing it to harvest the computer's cached network login credentials and password hashes in less than three seconds.
 
 ### Mass Data Exfiltration ###
 
-** Storage-Based File Theft **
+**Storage-Based File Theft**
     
 By emulating a standard flash drive, the device can interact with its own automated scripts to crawl through a computer's documents, images, and configuration files, quietly downloading and storing huge amounts of data onto its encrypted internal memory.
         
 ### Keyboard Injection & System Access ###
 
-** Advanced BadUSB Scripts **
+**Advanced BadUSB Scripts**
     
 Types out pre-programmed terminal commands at lightning speeds to open backdoors, download remote software payloads, or configure permanent remote access points into a corporate network.
         
 ### Automated Software Attacks ###
     
-** Staged Logic Payloads ** 
+**Staged Logic Payloads** 
     
 Because it runs a full Linux environment internally, a payload can do complex math or logic checks on the fly. For example, it can check if an antivirus software is running; if yes, it executes an evasion script, and if no, it directly downloads a remote access terminal.

@@ -59,6 +59,8 @@
       url: /tools/esp32
     - title: ESP32 Maurader
       url: /tools/esp32maurader
+    - title: ESP Recorder
+      url: /EspRecorder
     - title: O. MG. Cable
       url: /tools/omg
     - title: Rubber Ducky

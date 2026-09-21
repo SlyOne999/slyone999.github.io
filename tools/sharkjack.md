@@ -19,6 +19,7 @@ Runs a lightweight Linux operating system (OpenWrt), giving it access to standar
 Uses a single multi-colour LED to communicate its current status to the operator, flashing distinct sequences for booting, successful scanning, payload completion, or errors.
 
 ## Attacks ## 
+
 ### Rapid Network Reconnaissance ### 
 ** Network Mapping (Nmap Scans) ** 
 Automatically scanning the local network segment the instant it is plugged in. It maps out active IP addresses, discovers connected devices (like servers, printers, and workstations), and identifies open, vulnerable ports.

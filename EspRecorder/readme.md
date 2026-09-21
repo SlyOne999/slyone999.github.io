@@ -24,24 +24,24 @@ Pairs with a desktop client script that automatically captures the raw network a
 
 ### Long-Term Battery Operation ###
 Combines deep sleep modes with integrated battery telemetry scaling and a TP4056 lithium charging module to run covertly for extended periods.
-    
+
 ## Attacks ##
 
 ### Audio Eavesdropping & Room Bugging ###
 
-** Acoustic Surveillance **
+**Acoustic Surveillance**
     
 Deploying the non-metallic, disguised enclosure into a room, vehicle, or workspace to actively record conversations. The operator sits safely out of sight within Wi-Fi range to pull the live feed via a connected laptop.
 
 ### Event-Triggered Reconnaissance ###
 
-** Motion & Boundary Alerts **
+**Motion & Boundary Alerts**
         
 Configuring the system to wake up exclusively when someone approaches an asset (using the PIR module) or opens a desk drawer/door (using the vibration sensor). This lets attackers map out exactly when physical security boundaries are being breached without wasting battery power.
 
 ### Continuous Room Logging ###
 
-** Automated Exfiltration **
+**Automated Exfiltration**
         
 Leveraging the companion script to automatically dump daily audio logs into neatly indexed folders on a remote host. This enables seamless, continuous archiving of space telemetry over days or weeks.
 

@@ -12,15 +12,23 @@ The device acts as a covert, standalone listening post that monitors physical sp
 
 High-Fidelity Audio Capture: 
 
-    Uses an INMP441 I2S digital MEMS microphone module to intercept crisp, high-quality audio directly from its surroundings.
-Standalone Wi-Fi Hotspot: 
-    Spins up its own private Wi-Fi Access Point (ESP32_S3_Audio_Mic), removing the need for a local internet connection or router.
+Uses an INMP441 I2S digital MEMS microphone module to intercept crisp, high-quality audio directly from its surroundings.
+
+Standalone Wi-Fi Hotspot:
+
+Spins up its own private Wi-Fi Access Point (ESP32_S3_Audio_Mic), removing the need for a local internet connection or router.
+
 Sensor-Driven Wakeups: 
-    Connects to dynamic external sensors—like the AM312 Mini PIR motion sensor or SW-420 vibration sensor—to stay asleep until movement or physical vibrations trigger active streaming.
+
+Connects to dynamic external sensors—like the AM312 Mini PIR motion sensor or SW-420 vibration sensor—to stay asleep until movement or physical vibrations trigger active streaming.
+
 Automated Python Logging: 
-    Pairs with a desktop client script that automatically captures the raw network audio stream, processes it into standard .wav files, and manages disk space by auto-deleting records older than 7 days.
+
+Pairs with a desktop client script that automatically captures the raw network audio stream, processes it into standard .wav files, and manages disk space by auto-deleting records older than 7 days.
+
 Long-Term Battery Operation: 
-    Combines deep sleep modes with integrated battery telemetry scaling and a TP4056 lithium charging module to run covertly for extended periods.
+
+Combines deep sleep modes with integrated battery telemetry scaling and a TP4056 lithium charging module to run covertly for extended periods.
     
  ## Attacks ##
 
@@ -28,20 +36,20 @@ Long-Term Battery Operation:
 
     Acoustic Surveillance: 
     
-        Deploying the non-metallic, disguised enclosure into a room, vehicle, or workspace to actively record conversations. The operator sits safely out of sight within Wi-Fi range to pull the live feed via a connected laptop.
+    Deploying the non-metallic, disguised enclosure into a room, vehicle, or workspace to actively record conversations. The operator sits safely out of sight within Wi-Fi range to pull the live feed via a connected laptop.
 
 2. Event-Triggered Reconnaissance
 
     Motion & Boundary Alerts: 
         
-        Configuring the system to wake up exclusively when someone approaches an asset (using the PIR module) or opens a desk drawer/door (using the vibration sensor). This lets attackers map out exactly when physical security boundaries are being breached without wasting battery power.
+    Configuring the system to wake up exclusively when someone approaches an asset (using the PIR module) or opens a desk drawer/door (using the vibration sensor). This lets attackers map out exactly when physical security boundaries are being breached without wasting battery power.
 
 3. Continuous Room Logging
 
     Automated Exfiltration: 
         
-        Leveraging the companion script to automatically dump daily audio logs into neatly indexed folders on a remote host. This enables seamless, continuous archiving of space telemetry over days or weeks.
-        
+    Leveraging the companion script to automatically dump daily audio logs into neatly indexed folders on a remote host. This enables seamless, continuous archiving of space telemetry over days or weeks.
+
 ---
 
 ## 🛠️ Global Project Shopping List (BOM)

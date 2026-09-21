@@ -7,38 +7,39 @@ The Bash Bunny is a highly advanced, multi-payload USB attack platform designed 
 ## Usage ##
 Unlike simpler keystroke injection tools, the Bash Bunny can mimic multiple device types simultaneously, combining different attack concepts into a single tool:
 
-Multi-Device Emulation (Combo Attacks): 
+### Multi-Device Emulation (Combo Attacks) ###
 
-    Can trick a target computer into thinking it is a physical human keyboard, an external USB storage drive, a rapid wired network adapter, and a serial device all at the exact same time.
+Can trick a target computer into thinking it is a physical human keyboard, an external USB storage drive, a rapid wired network adapter, and a serial device all at the exact same time.
 
-4-Way Payload Switch: 
+### 4-Way Payload Switch ### 
 
-    Features a physical hardware switch that lets the operator choose between two pre-loaded payloads, an arming mode (to edit scripts), or a safe off position.Blistering Performance: Equipped with a fast processor and high-speed storage, allowing it to boot up, run complex data-harvesting tasks, and shut down before a bystander notices.
+Features a physical hardware switch that lets the operator choose between two pre-loaded payloads, an arming mode (to edit scripts), or a safe off position.Blistering Performance: Equipped with a fast processor and high-speed storage, allowing it to boot up, run complex data-harvesting tasks, and shut down before a bystander notices.
     
-RGB Status LED: Uses a programmable multi-colour LED to visually communicate its precise execution status to the attacker (e.g., flashing green for booting, amber for running, or solid green for completed).
+### RGB Status LED ### 
+Uses a programmable multi-colour LED to visually communicate its precise execution status to the attacker (e.g., flashing green for booting, amber for running, or solid green for completed).
 
 ## Attacks ##
 
-1. Network Interface Hijacking (Quick Credentials)
+### Network Interface Hijacking (Quick Credentials) ###
 
-    Lock-Screen Password Harvesting (Quick Creds): 
+** Lock-Screen Password Harvesting (Quick Creds) **
 
-        When plugged into a locked computer, the Bash Bunny instantly emulates a high-speed Ethernet adapter. The locked operating system automatically shifts its network routing through the Bunny, allowing it to harvest the computer's cached network login credentials and password hashes in less than three seconds.
+When plugged into a locked computer, the Bash Bunny instantly emulates a high-speed Ethernet adapter. The locked operating system automatically shifts its network routing through the Bunny, allowing it to harvest the computer's cached network login credentials and password hashes in less than three seconds.
 
-2. Mass Data Exfiltration
+### Mass Data Exfiltration ###
 
-    Storage-Based File Theft: 
+** Storage-Based File Theft **
     
-        By emulating a standard flash drive, the device can interact with its own automated scripts to crawl through a computer's documents, images, and configuration files, quietly downloading and storing huge amounts of data onto its encrypted internal memory.
+By emulating a standard flash drive, the device can interact with its own automated scripts to crawl through a computer's documents, images, and configuration files, quietly downloading and storing huge amounts of data onto its encrypted internal memory.
         
-3. Keyboard Injection & System Access
+### Keyboard Injection & System Access ###
 
-    Advanced BadUSB Scripts: 
+** Advanced BadUSB Scripts **
     
-        Types out pre-programmed terminal commands at lightning speeds to open backdoors, download remote software payloads, or configure permanent remote access points into a corporate network.
+Types out pre-programmed terminal commands at lightning speeds to open backdoors, download remote software payloads, or configure permanent remote access points into a corporate network.
         
-4. Automated Software Attacks
+### Automated Software Attacks ###
     
-    Staged Logic Payloads: 
+** Staged Logic Payloads ** 
     
-        Because it runs a full Linux environment internally, a payload can do complex math or logic checks on the fly. For example, it can check if an antivirus software is running; if yes, it executes an evasion script, and if no, it directly downloads a remote access terminal.
+Because it runs a full Linux environment internally, a payload can do complex math or logic checks on the fly. For example, it can check if an antivirus software is running; if yes, it executes an evasion script, and if no, it directly downloads a remote access terminal.

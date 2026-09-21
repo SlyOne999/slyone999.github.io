@@ -7,14 +7,43 @@ The USB Rubber Ducky is an advanced keystroke injection tool disguised as an inn
 
 ## Usage ##
 While computers see a normal thumb drive, they treat the Rubber Ducky as a standard human-to-computer keyboard, exploiting an inherent trust flaw in modern operating systems:  
-Keystroke Injection: Typings out pre-programmed commands at blistering speeds (thousands of words per minute), far faster than any human.Universal Compatibility: Tricks Windows, macOS, Linux, and Android devices instantly without needing special drivers or administrative privileges.  
-Ducky Script 3.0: Utilises a dedicated programming language that allows the device to think, use logic loops, adapt to the specific operating system it is plugged into, and store variables.  
-MicroSD Storage: Holds payload scripts and can exfiltrate stolen data directly onto its onboard storage card.
+
+### Keystroke Injection ### 
+
+Typings out pre-programmed commands at blistering speeds (thousands of words per minute), far faster than any human.
+
+### Universal Compatibility ### 
+
+Tricks Windows, macOS, Linux, and Android devices instantly without needing special drivers or administrative privileges.
+
+### Ducky Script 3.0 ### 
+
+Utilises a dedicated programming language that allows the device to think, use logic loops, adapt to the specific operating system it is plugged into, and store variables.  
+
+### MicroSD Storage ### 
+
+Holds payload scripts and can exfiltrate stolen data directly onto its onboard storage card.
 
 ## Attacks ##
-1. Credential Stealing & ExfiltrationPassword Harvesting: Extracting saved passwords, Wi-Fi keys, and browser credentials from the target machine and saving them to the Ducky's internal memory card in under three seconds.Session Hijacking: Stealing active login session tokens or browser cookies, allowing attackers to access the victim's online accounts without needing their actual passwords.
-2. System Access & BackdoorsReverse Shell Deployment: Typing a silent command line sequence that forces the victim's computer to open a hidden connection back to the attacker's server, giving them permanent remote control.Disabling Security Tools: Quickly navigating system settings via keyboard shortcuts to temporarily switch off local antivirus tools or firewalls before they can scan the device.
-3. Social EngineeringThe "Dropped Drive" Attack: Leaving the device in a company car park or lobby. An unsuspecting employee picks it up, plugs it into a work computer out of curiosity, and instantly triggers the malicious payload script.
+### Credential Stealing & Exfiltration ###
+**Password Harvesting** 
+
+Extracting saved passwords, Wi-Fi keys, and browser credentials from the target machine and saving them to the Ducky's internal memory card in under three seconds.
+**Session Hijacking** 
+
+Stealing active login session tokens or browser cookies, allowing attackers to access the victim's online accounts without needing their actual passwords.
+
+### System Access & Backdoors ###
+**Reverse Shell Deployment** 
+
+Typing a silent command line sequence that forces the victim's computer to open a hidden connection back to the attacker's server, giving them permanent remote control.
+**Disabling Security Tools** 
+
+Quickly navigating system settings via keyboard shortcuts to temporarily switch off local antivirus tools or firewalls before they can scan the device.
+### Social Engineering ### 
+**The "Dropped Drive" Attack** 
+
+Leaving the device in a company car park or lobby. An unsuspecting employee picks it up, plugs it into a work computer out of curiosity, and instantly triggers the malicious payload script.
 
 ## Example Scripts ##
 Here are three basic examples of Ducky Script. They demonstrate how the USB Rubber Ducky interacts with a computer by mimicking keyboard shortcuts and typing commands.  

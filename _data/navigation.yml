@@ -55,12 +55,13 @@
       url: /tools/pineapple
     - title: Cardputer
       url: /tools/cardputer
-    - title: ESP32 Microcontroller
-      url: /tools/esp32
-    - title: ESP32 Maurader
-      url: /tools/esp32maurader
-    - title: ESP Recorder
-      url: /EspRecorder
+      sublinks:
+        - title: ESP32 Microcontroller
+          url: /tools/esp32
+        - title: ESP32 Maurader
+          url: /tools/esp32maurader
+        - title: ESP Recorder
+          url: /tools/espRecorder
     - title: O. MG. Cable
       url: /tools/omg
     - title: Rubber Ducky

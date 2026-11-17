@@ -1,4 +1,4 @@
-# Screen Crab#
+# Screen Crab #
 ![alt text](/images/screencrab.jpg?raw=true)
 
 ## Description ##

